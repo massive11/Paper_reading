@@ -1,7 +1,7 @@
 >论文标题：Road-map: A Light-Weight Semantic Map for Visual Localization towards Autonomous Driving  
 发表时间：2021  
 研究组织：华为车BU  
-本文标签：自动驾驶、语义地图、CVPR2021
+本文标签：自动驾驶、语义地图、ICRA2021
 
 
 # 四问：
