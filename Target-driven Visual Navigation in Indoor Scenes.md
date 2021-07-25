@@ -1,7 +1,7 @@
 >论文标题：Target-driving Visual Navigation in Indoor Scenes using Deep Reinforment Learning  
 发表时间：2017  
 研究组织：Stanford University, Li FeiFei's team  
-本文标签：室内导航、DRL、视觉导航
+本文标签：室内导航、DRL、视觉导航、ICRA
 
 
 # 四问：
