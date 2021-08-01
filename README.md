@@ -8,4 +8,4 @@
 「2021」「ICRA」[[Article](https://arxiv.org/abs/2106.02527)]
 
 2.Long-term Visual Localization using Semantically Segmented Images  
-「2018」 「ICRA」 [[Article]](https://www.researchgate.net/publication/322537521_Long-term_Visual_Localization_using_Semantically_Segmented_Images)
+「2018」 「ICRA」 [[Article]](http://www.liuxiao.org/wp-content/uploads/2018/08/Long-term-Visual-Localization-using-Semantically-Segmented-Images.pdf)
