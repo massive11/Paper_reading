@@ -10,5 +10,8 @@
 2.Long-term Visual Localization using Semantically Segmented Images  
 「2018」 「ICRA」 「Chalmers University of Technology」  [[Article]](http://www.liuxiao.org/wp-content/uploads/2018/08/Long-term-Visual-Localization-using-Semantically-Segmented-Images.pdf)
 
-3.FarSee-Net: Real-Time Semantic Segmentation by Efficient Multi-scale Context Aggregation and Feature Space Super-resolution  
+  
+## 2021年8月
+### 语义分割
+1.FarSee-Net: Real-Time Semantic Segmentation by Efficient Multi-scale Context Aggregation and Feature Space Super-resolution  
 「2020」 「ICRA」 「SenseTime Group Limited」  [[Article]](https://arxiv.org/abs/2003.03913)
