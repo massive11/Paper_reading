@@ -15,3 +15,6 @@
 ### 语义分割
 1.FarSee-Net: Real-Time Semantic Segmentation by Efficient Multi-scale Context Aggregation and Feature Space Super-resolution  
 「2020」 「ICRA」 「SenseTime Group Limited」  [[Article]](https://arxiv.org/abs/2003.03913)
+
+2.SA-LOAM: Semantic-aided LiDAR SLAM with Loop Closure  
+「2021」 「ICRA」 「Zhejiang university」  [[Article]](https://arxiv.org/abs/2106.11516)
