@@ -23,3 +23,7 @@
 2.SA-LOAM: Semantic-aided LiDAR SLAM with Loop Closure.  
     SA-LOAM：具有闭环的语义辅助的LiDar SLAM  
 「2021」 「ICRA」 「Zhejiang university」  [[Article]](https://arxiv.org/abs/2106.11516)
+
+### SLAM综述
+1.基于单目视觉的同时定位于地图构建方法综述
+「2016」 「CCF-A」 「Zhejiang university」  [[Article]](http://www.cad.zju.edu.cn/home/gfzhang/projects/JCAD2016-SLAM-survey.pdf)
