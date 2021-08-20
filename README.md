@@ -27,3 +27,6 @@
 ### SLAM综述
 1.基于单目视觉的同时定位与地图构建方法综述  
 「2016」 「CCF-A」 「Zhejiang University」  [[Article]](http://www.cad.zju.edu.cn/home/gfzhang/projects/JCAD2016-SLAM-survey.pdf)
+
+2.基于图优化的同时定位与地图创建综述  
+「2013」 「中文核心」 「South China University of Technology」  [[Article]](http://robot.sia.cn/CN/10.3724/SP.J.1218.2013.00500)
