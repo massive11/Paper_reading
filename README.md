@@ -4,6 +4,7 @@
 1.Target-driving Visual Navigation in Indoor Scenes using Deep Reinforment Learning.  
     使用深度强化学习的目标驱动的室内视觉导航  
 「2017」「ICRA」 「Stanford University」  [[Article](https://arxiv.org/abs/1609.05143)]  
+
 ### 语义分割
 1.Road-map: A Light-Weight Semantic Map for Visual Localization towards Autonomous Driving.   
     Road-map：面向自动驾驶的视觉定位的轻量级语义地图  
@@ -30,3 +31,10 @@
 
 2.基于图优化的同时定位与地图创建综述  
 「2013」 「中文核心」 「South China University of Technology」  [[Article]](http://robot.sia.cn/CN/10.3724/SP.J.1218.2013.00500)
+
+
+## 2021年9月
+### 目标检测
+1.ClearGrasp:3D Shape Estimation of Transparent Objects for Manipulation.  
+    ClearGrasp：用于操作的透明物体的3D形状估计
+「2020」 「ICRA」 「Google Research」  [[Article]](https://arxiv.org/abs/1910.02550)
