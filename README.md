@@ -34,7 +34,11 @@
 
 
 ## 2021年9月
-### 目标检测
+### 深度估计
 1.ClearGrasp:3D Shape Estimation of Transparent Objects for Manipulation.  
     ClearGrasp：用于操作的透明物体的3D形状估计  
 「2020」 「ICRA」 「Google Research」  [[Article]](https://arxiv.org/abs/1910.02550)
+
+2.Differentiable Mapping Networks: Learning Structured Map Representations for Sparse Visual Localization.  
+    可微映射网络：学习用于稀疏视觉定位的结构化地图表示
+「2020」「ICRA」「Google Research」  [[Article]](https://arxiv.org/abs/2005.09530)  
