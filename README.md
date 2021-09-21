@@ -40,5 +40,8 @@
 「2020」 「ICRA」 「Google Research」  [[Article]](https://arxiv.org/abs/1910.02550)
 
 2.Differentiable Mapping Networks: Learning Structured Map Representations for Sparse Visual Localization.  
-    可微映射网络：学习用于稀疏视觉定位的结构化地图表示
+    可微建图网络：学习用于稀疏视觉定位的结构化地图表示  
 「2020」「ICRA」「Google Research」  [[Article]](https://arxiv.org/abs/2005.09530)  
+
+3.模型车自动驾驶平台及车道线识别算法设计与实现  
+「2021」  「硕士学位论文」  「Zhejiang University」  
