@@ -47,3 +47,10 @@
 ### 自动驾驶
 1.模型车自动驾驶平台及车道线识别算法设计与实现  
 「2021」  「硕士学位论文」  「Zhejiang University」  
+
+
+## 2021年10月
+### 语义分割
+1.Boosting Real-Time Driving Scene Parsing with Shared Semantics  
+    使用共享语义促进实时驾驶场景解析
+「2020」「ICRA」「STTU」「SAIC」   [[Article]](https://arxiv.org/pdf/1909.07038.pdf)
