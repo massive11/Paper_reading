@@ -52,5 +52,9 @@
 ## 2021年10月
 ### 语义分割
 1.Boosting Real-Time Driving Scene Parsing with Shared Semantics  
-    使用共享语义促进实时驾驶场景解析
-「2020」「ICRA」「STTU」「SAIC」   [[Article]](https://arxiv.org/pdf/1909.07038.pdf)
+    使用共享语义促进实时驾驶场景解析  
+「2020」「ICRA」「SJTU」「SAIC」   [[Article]](https://arxiv.org/pdf/1909.07038.pdf)
+
+2.Focus on Local: Detecting Lane Marker from Bottom Up via Key Point  
+    专注于局部：通过关键点从下到上检测车道标记  
+「2021」「CVPR」「Noah's Lab, Huawei」   [[Article]](https://arxiv.org/pdf/2105.13680.pdf)  
