@@ -1,4 +1,8 @@
 # Paper_reading
+## book_reading
+* 深度学习花书笔记（2021.11.1 更新）
+
+
 ## 2021年7月
 ### 强化学习
 1.Target-driving Visual Navigation in Indoor Scenes using Deep Reinforment Learning.  
