@@ -63,3 +63,14 @@
 1.Focus on Local: Detecting Lane Marker from Bottom Up via Key Point  
     专注于局部：通过关键点从下到上检测车道标记  
 「2021」「CVPR」「Noah's Lab, Huawei」   [[Article]](https://arxiv.org/pdf/2105.13680.pdf)  
+
+
+## 2021年11月
+### 网络结构
+1.Deep residual learning for image recognition
+    用于图像识别的深度残差学习
+「2015」「CVPR」「Microsoft」   [[Article]](https://arxiv.org/abs/1512.03385)
+
+### 网络模型
+1.Mask R-CNN  
+「2017」「CVPR」「FAIR」   [[Article]](https://arxiv.org/pdf/1703.06870.pdf)  
