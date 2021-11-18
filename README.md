@@ -1,6 +1,6 @@
 # Paper_reading
 ## book_reading
-* 深度学习花书笔记（2021.11.12 更新）
+* 深度学习花书笔记（2021.11.15 更新）
 
 
 ## 2021年7月
@@ -70,6 +70,10 @@
 1.Deep residual learning for image recognition
     用于图像识别的深度残差学习
 「2015」「CVPR」「Microsoft」   [[Article]](https://arxiv.org/abs/1512.03385)
+
+2.Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift
+    批标准化：通过减少内部协变量偏移来加速深度网络训练
+「2015」「ICML」「Google」   [[Article]](https://arxiv.org/pdf/1502.03167.pdf)
 
 ### 网络模型
 1.Mask R-CNN  

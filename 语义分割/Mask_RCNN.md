@@ -1,7 +1,7 @@
 >论文标题：Mask R-CNN  
 发表时间：2017  
 研究组织：Facebook AI Research  
-本文标签：语义分割、CNN
+本文标签：语义分割、CNN、CVPR
 
 
 # 速读概览：
