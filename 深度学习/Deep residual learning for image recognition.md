@@ -1,7 +1,7 @@
 >论文标题：Deep residual learning for image recognition  
 发表时间：2015  
 研究组织：Microsoft  
-本文标签：ResNet、DL、CNN
+本文标签：ResNet、DL、CNN、CVPR
 
 
 # 速读概览：

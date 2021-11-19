@@ -1,6 +1,6 @@
 # Paper_reading
 ## book_reading
-* 深度学习花书笔记（2021.11.15 更新）
+* 深度学习花书笔记（2021.11.18 更新Ch10）
 
 
 ## 2021年7月
@@ -67,14 +67,19 @@
 
 ## 2021年11月
 ### 网络结构
-1.Deep residual learning for image recognition
-    用于图像识别的深度残差学习
+1.Deep residual learning for image recognition  
+    用于图像识别的深度残差学习（ResNet）  
 「2015」「CVPR」「Microsoft」   [[Article]](https://arxiv.org/abs/1512.03385)
 
-2.Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift
-    批标准化：通过减少内部协变量偏移来加速深度网络训练
+2.Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift  
+    批标准化：通过减少内部协变量偏移来加速深度网络训练  
 「2015」「ICML」「Google」   [[Article]](https://arxiv.org/pdf/1502.03167.pdf)
 
 ### 网络模型
 1.Mask R-CNN  
 「2017」「CVPR」「FAIR」   [[Article]](https://arxiv.org/pdf/1703.06870.pdf)  
+
+### 视频目标检测
+1.Flow-Guided Feature Aggression for Video Object Detection  
+用于视频对象检测的流引导特征攻击  
+「2017」「ICCV」「USTC」 「Microsoft」  [[Article]](https://arxiv.org/abs/1703.10025)  
