@@ -80,6 +80,6 @@
 「2017」「CVPR」「FAIR」   [[Article]](https://arxiv.org/pdf/1703.06870.pdf)  
 
 ### 视频目标检测
-1.Flow-Guided Feature Aggression for Video Object Detection  
-用于视频对象检测的流引导特征攻击  
+1.Flow-Guided Feature Aggregation for Video Object Detection  
+用于视频目标检测的流引导特征聚合  
 「2017」「ICCV」「USTC」 「Microsoft」  [[Article]](https://arxiv.org/abs/1703.10025)  
