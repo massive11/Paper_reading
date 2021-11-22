@@ -1,24 +1,39 @@
 # Paper_reading
-## 目录
-***
-### 书籍笔记
+# 目录
+* [书籍笔记](#book)
+  * 深度学习花书笔记
+* [论文笔记](#paper)
+
+
+## 书籍笔记<span id = "book"></span>
 * 深度学习花书笔记（2021.11.18 更新Ch10 序列建模：循环和递归网络）
 
 ***
 
-## 论文笔记
-论文共计17篇，其中包含强化学习1篇，语义分割5篇，SLAM综述2篇，深度估计1篇，视觉定位1篇，自动驾驶1篇，车道线检测1篇，网络结构2篇，网络模型1篇，视频目标检测1篇，图像目标检测1篇
+## 论文笔记<span id = "paper"></span>
+论文共计17篇，其中包含
+* [强化学习](#reinforcement)1篇
+* [语义分割](#segmentation)5篇
+* [SLAM综述](#SLAM)2篇
+* [深度估计](#estimation)1篇
+* [视觉定位](#localization)1篇
+* [自动驾驶](#driving)1篇
+* [车道线检测](#lane)1篇
+* [网络结构](#architecture)2篇
+* [网络模型](#model)1篇
+* [视频目标检测](#video)1篇
+* [图像目标检测](#image)1篇
 
 ***
 
-### 强化学习
+### 强化学习<span id = "reinforcement"></span>
 1.Target-driving Visual Navigation in Indoor Scenes using Deep Reinforment Learning.  
     使用深度强化学习的目标驱动的室内视觉导航  
 「2017」「ICRA」 「Stanford University」  [[Article](https://arxiv.org/abs/1609.05143)]  
 
 ***
 
-### 语义分割
+### 语义分割<span id = "segmentation"></span>
 1.Road-map: A Light-Weight Semantic Map for Visual Localization towards Autonomous Driving.   
     Road-map：面向自动驾驶的视觉定位的轻量级语义地图  
 「2021」「ICRA」 「HUAWEI 车BU」  [[Article](https://arxiv.org/abs/2106.02527)]
@@ -41,7 +56,7 @@
 
 ***
 
-### SLAM综述
+### SLAM综述<span id = "SLAM"></span>
 1.基于单目视觉的同时定位与地图构建方法综述  
 「2016」 「CCF-A」 「Zhejiang University」  [[Article]](http://www.cad.zju.edu.cn/home/gfzhang/projects/JCAD2016-SLAM-survey.pdf)
 
@@ -50,34 +65,34 @@
 
 ***
 
-### 深度估计
+### 深度估计<span id = "estimation"></span>
 1.ClearGrasp:3D Shape Estimation of Transparent Objects for Manipulation.  
     ClearGrasp：用于操作的透明物体的3D形状估计  
 「2020」 「ICRA」 「Google Research」  [[Article]](https://arxiv.org/abs/1910.02550)
 
 ***
 
-### 视觉定位
+### 视觉定位<span id = "localization"></span>
 1.Differentiable Mapping Networks: Learning Structured Map Representations for Sparse Visual Localization.  
     可微建图网络：学习用于稀疏视觉定位的结构化地图表示  
 「2020」「ICRA」「Google Research」  [[Article]](https://arxiv.org/abs/2005.09530)  
 
 ***
 
-### 自动驾驶
+### 自动驾驶<span id = "driving"></span>
 1.模型车自动驾驶平台及车道线识别算法设计与实现  
 「2021」  「硕士学位论文」  「Zhejiang University」  
 
 ***
 
-### 车道线检测
+### 车道线检测<span id = "lane"></span>
 1.Focus on Local: Detecting Lane Marker from Bottom Up via Key Point  
     专注于局部：通过关键点从下到上检测车道标记  
 「2021」「CVPR」「Noah's Lab, Huawei」   [[Article]](https://arxiv.org/pdf/2105.13680.pdf)  
 
 ***
 
-### 网络结构
+### 网络结构<span id = "architecture"></span>
 1.Deep residual learning for image recognition  
     用于图像识别的深度残差学习（ResNet）  
 「2015」「CVPR」「Microsoft」   [[Article]](https://arxiv.org/abs/1512.03385)
@@ -88,20 +103,20 @@
 
 ***
 
-### 网络模型
+### 网络模型<span id = "model"></span>
 1.Mask R-CNN  
 「2017」「CVPR」「FAIR」   [[Article]](https://arxiv.org/pdf/1703.06870.pdf)  
 
 ***
 
-### 视频目标检测
+### 视频目标检测<span id = "video"></span>
 1.Flow-Guided Feature Aggregation for Video Object Detection  
     用于视频目标检测的流引导特征聚合  
 「2017」「ICCV」「USTC」 「Microsoft」  [[Article]](https://arxiv.org/abs/1703.10025)  
 
 ***
 
-### 图像目标检测
+### 图像目标检测<span id = "image"></span>
 1.Rich feature hierarchies for accurate object detection and semantic segmentation Tech report  
     用于准确目标检测和语义分割的丰富特征层次技术报告（R-CNN）  
 「2014」「CVPR」「UC Berkeley」  [[Article]](https://arxiv.org/abs/1311.2524)  
