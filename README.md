@@ -3,6 +3,7 @@
 * [书籍笔记](#book)
   * 深度学习花书笔记
 * [论文笔记](#paper)
+  * [时间序记录](#time)
 
 
 ## 书籍笔记<span id = "book"></span>
@@ -124,8 +125,14 @@
 
 ***
 
-## 时间序记录
-## 2021年7月
+## 时间序记录<span id = "time"></span>
+* [2021年7月](#2107)
+* [2021年8月](#2108)
+* [2021年9月](#2109)
+* [2021年10月](#2110)
+* [2021年11月](#2111)
+
+## 2021年7月<span id = "2107"></span>
 ### 强化学习
 1.Target-driving Visual Navigation in Indoor Scenes using Deep Reinforment Learning.  
     使用深度强化学习的目标驱动的室内视觉导航  
@@ -142,7 +149,7 @@
 
 ***
   
-## 2021年8月
+## 2021年8月<span id = "2108"></span>
 ### 语义分割
 1.FarSee-Net: Real-Time Semantic Segmentation by Efficient Multi-scale Context Aggregation and Feature Space Super-resolution.  
     FarSee-Net：使用高效多尺度上下文融合和特征空间超分辨率的实时语义分割  
@@ -161,7 +168,7 @@
 
 ***
 
-## 2021年9月
+## 2021年9月<span id = "2109"></span>
 ### 深度估计
 1.ClearGrasp:3D Shape Estimation of Transparent Objects for Manipulation.  
     ClearGrasp：用于操作的透明物体的3D形状估计  
@@ -178,7 +185,7 @@
 
 ***
 
-## 2021年10月
+## 2021年10月<span id = "2110"></span>
 ### 语义分割
 1.Boosting Real-Time Driving Scene Parsing with Shared Semantics  
     使用共享语义促进实时驾驶场景解析  
@@ -191,7 +198,7 @@
 
 ***
 
-## 2021年11月
+## 2021年11月<span id = "2111"></span>
 ### 网络结构
 1.Deep residual learning for image recognition  
     用于图像识别的深度残差学习（ResNet）  
