@@ -12,23 +12,23 @@
 ***
 
 ## 论文笔记<span id = "paper"></span>
-论文共计17篇，其中包含
-* [强化学习](#reinforcement)1篇
-* [语义分割](#segmentation)5篇
-* [SLAM综述](#SLAM)2篇
-* [深度估计](#estimation)1篇
-* [视觉定位](#localization)1篇
-* [自动驾驶](#driving)1篇
-* [车道线检测](#lane)1篇
-* [网络结构](#architecture)2篇
-* [网络模型](#model)1篇
-* [视频目标检测](#video)1篇
-* [图像目标检测](#image)1篇
+论文共计18篇，其中包含
+* [强化学习](#reinforcement) 1篇
+* [语义分割](#segmentation) 5篇
+* [SLAM综述](#SLAM) 2篇
+* [深度估计](#estimation) 1篇
+* [视觉定位](#localization) 1篇
+* [自动驾驶](#driving) 1篇
+* [车道线检测](#lane) 1篇
+* [网络结构](#architecture) 2篇
+* [网络模型](#model) 1篇
+* [视频目标检测](#video) 1篇
+* [图像目标检测](#image) 2篇
 
 ***
 
 ### 强化学习<span id = "reinforcement"></span>
-1.Target-driving Visual Navigation in Indoor Scenes using Deep Reinforment Learning.  
+1.[Target-driving Visual Navigation in Indoor Scenes using Deep Reinforment Learning](https://github.com/massive11/Paper_reading/blob/master/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/Target-driven%20Visual%20Navigation%20in%20Indoor%20Scenes.md)  
     使用深度强化学习的目标驱动的室内视觉导航  
 「2017」「ICRA」 「Stanford University」  [[Article](https://arxiv.org/abs/1609.05143)]  
 
@@ -113,14 +113,17 @@
 ### 视频目标检测<span id = "video"></span>
 1.Flow-Guided Feature Aggregation for Video Object Detection  
     用于视频目标检测的流引导特征聚合  
-「2017」「ICCV」「USTC」 「Microsoft」  [[Article]](https://arxiv.org/abs/1703.10025)  
+「2017」「ICCV」「USTC」 「Microsoft」「Xizhou Zhu」「引用：385」  [[Article]](https://arxiv.org/abs/1703.10025)  
 
 ***
 
 ### 图像目标检测<span id = "image"></span>
 1.Rich feature hierarchies for accurate object detection and semantic segmentation Tech report  
     用于准确目标检测和语义分割的丰富特征层次技术报告（R-CNN）  
-「2014」「CVPR」「UC Berkeley」  [[Article]](https://arxiv.org/abs/1311.2524)  
+「2014」「CVPR」「UC Berkeley」「R Girshick」「引用：20369」 [[Article]](https://arxiv.org/abs/1311.2524)  
+
+2.Fast R-CNN  
+「2015」「ICCV」「Microsoft」「R Girshick」「引用：16908」  [[Article]](https://arxiv.org/pdf/1504.08083.pdf)  
 
 
 ***
@@ -133,6 +136,8 @@
 * [2021年11月](#2111)
 
 ## 2021年7月<span id = "2107"></span>
+* 本月共3篇
+  
 ### 强化学习
 1.Target-driving Visual Navigation in Indoor Scenes using Deep Reinforment Learning.  
     使用深度强化学习的目标驱动的室内视觉导航  
@@ -150,6 +155,8 @@
 ***
   
 ## 2021年8月<span id = "2108"></span>
+* 本月共4篇
+  
 ### 语义分割
 1.FarSee-Net: Real-Time Semantic Segmentation by Efficient Multi-scale Context Aggregation and Feature Space Super-resolution.  
     FarSee-Net：使用高效多尺度上下文融合和特征空间超分辨率的实时语义分割  
@@ -169,6 +176,8 @@
 ***
 
 ## 2021年9月<span id = "2109"></span>
+* 本月共3篇
+  
 ### 深度估计
 1.ClearGrasp:3D Shape Estimation of Transparent Objects for Manipulation.  
     ClearGrasp：用于操作的透明物体的3D形状估计  
@@ -186,6 +195,8 @@
 ***
 
 ## 2021年10月<span id = "2110"></span>
+* 本月共2篇
+  
 ### 语义分割
 1.Boosting Real-Time Driving Scene Parsing with Shared Semantics  
     使用共享语义促进实时驾驶场景解析  
@@ -199,6 +210,8 @@
 ***
 
 ## 2021年11月<span id = "2111"></span>
+* 本月共6篇
+  
 ### 网络结构
 1.Deep residual learning for image recognition  
     用于图像识别的深度残差学习（ResNet）  
@@ -215,9 +228,12 @@
 ### 视频目标检测
 1.Flow-Guided Feature Aggregation for Video Object Detection  
     用于视频目标检测的流引导特征聚合  
-「2017」「ICCV」「USTC」 「Microsoft」  [[Article]](https://arxiv.org/abs/1703.10025)  
+「2017」「ICCV」「USTC」 「Microsoft」「Xizhou Zhu」「引用：385」  [[Article]](https://arxiv.org/abs/1703.10025)  
 
 ### 图像目标检测
 1.Rich feature hierarchies for accurate object detection and semantic segmentation Tech report  
     用于准确目标检测和语义分割的丰富特征层次技术报告（R-CNN）  
-「2014」「CVPR」「UC Berkeley」  [[Article]](https://arxiv.org/abs/1311.2524)  
+「2014」「CVPR」「UC Berkeley」「R Girshick」「引用：20369」  [[Article]](https://arxiv.org/abs/1311.2524.pdf)  
+
+2.Fast R-CNN  
+「2015」「ICCV」「Microsoft」「R Girshick」「引用：16908」  [[Article]](https://arxiv.org/pdf/1504.08083.pdf)  
