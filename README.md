@@ -239,8 +239,8 @@
     用于准确目标检测和语义分割的丰富特征层次技术报告（R-CNN）  
 「2014」「CVPR」「UC Berkeley」「R Girshick」「引用：20369」  [[Article]](https://arxiv.org/abs/1311.2524.pdf)  
 
-2.Spatial Pyramid Pooling in Deep Convolutional Networks for Visual Recognition
-    用于视觉识别的深度卷积网络的空间金字塔池化
+2.Spatial Pyramid Pooling in Deep Convolutional Networks for Visual Recognition  
+    用于视觉识别的深度卷积网络的空间金字塔池化(SPPnet)
 「2015」「IEEE」「Microsoft」「Kaiming He」「引用：7221」  [[Article]](https://arxiv.org/pdf/1406.4729.pdf)
 
 3.Fast R-CNN  
