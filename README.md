@@ -12,7 +12,7 @@
 ***
 
 ## 论文笔记<span id = "paper"></span>
-论文共计18篇，其中包含
+论文共计19篇，其中包含
 * [强化学习](#reinforcement) 1篇
 * [语义分割](#segmentation) 5篇
 * [SLAM综述](#SLAM) 2篇
@@ -23,7 +23,7 @@
 * [网络结构](#architecture) 2篇
 * [网络模型](#model) 1篇
 * [视频目标检测](#video) 1篇
-* [图像目标检测](#image) 2篇
+* [图像目标检测](#image) 3篇
 
 ***
 
@@ -118,11 +118,15 @@
 ***
 
 ### 图像目标检测<span id = "image"></span>
-1.Rich feature hierarchies for accurate object detection and semantic segmentation Tech report  
+1.[Rich feature hierarchies for accurate object detection and semantic segmentation Tech report](https://github.com/massive11/Paper_reading/blob/master/%E5%9B%BE%E5%83%8F%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/Rich%20feature%20hierarchies%20for%20accurate%20object%20detection%20and%20semantic%20segmentation%20Tech%20report.md)  
     用于准确目标检测和语义分割的丰富特征层次技术报告（R-CNN）  
 「2014」「CVPR」「UC Berkeley」「R Girshick」「引用：20369」 [[Article]](https://arxiv.org/abs/1311.2524)  
 
-2.Fast R-CNN  
+2.Spatial Pyramid Pooling in Deep Convolutional Networks for Visual Recognition
+    用于视觉识别的深度卷积网络的空间金字塔池化
+「2015」「IEEE」「Microsoft」「Kaiming He」「引用：7221」  [[Article]](https://arxiv.org/pdf/1406.4729.pdf)
+
+3.[Fast R-CNN](https://github.com/massive11/Paper_reading/blob/master/%E5%9B%BE%E5%83%8F%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/Fast%20R-CNN.md)  
 「2015」「ICCV」「Microsoft」「R Girshick」「引用：16908」  [[Article]](https://arxiv.org/pdf/1504.08083.pdf)  
 
 
@@ -136,7 +140,7 @@
 * [2021年11月](#2111)
 
 ## 2021年7月<span id = "2107"></span>
-* 本月共3篇
+本月共3篇
   
 ### 强化学习
 1.Target-driving Visual Navigation in Indoor Scenes using Deep Reinforment Learning.  
@@ -155,7 +159,7 @@
 ***
   
 ## 2021年8月<span id = "2108"></span>
-* 本月共4篇
+本月共4篇
   
 ### 语义分割
 1.FarSee-Net: Real-Time Semantic Segmentation by Efficient Multi-scale Context Aggregation and Feature Space Super-resolution.  
@@ -176,7 +180,7 @@
 ***
 
 ## 2021年9月<span id = "2109"></span>
-* 本月共3篇
+本月共3篇
   
 ### 深度估计
 1.ClearGrasp:3D Shape Estimation of Transparent Objects for Manipulation.  
@@ -195,7 +199,7 @@
 ***
 
 ## 2021年10月<span id = "2110"></span>
-* 本月共2篇
+本月共2篇
   
 ### 语义分割
 1.Boosting Real-Time Driving Scene Parsing with Shared Semantics  
@@ -210,7 +214,7 @@
 ***
 
 ## 2021年11月<span id = "2111"></span>
-* 本月共6篇
+本月共7篇
   
 ### 网络结构
 1.Deep residual learning for image recognition  
@@ -235,5 +239,9 @@
     用于准确目标检测和语义分割的丰富特征层次技术报告（R-CNN）  
 「2014」「CVPR」「UC Berkeley」「R Girshick」「引用：20369」  [[Article]](https://arxiv.org/abs/1311.2524.pdf)  
 
-2.Fast R-CNN  
+2.Spatial Pyramid Pooling in Deep Convolutional Networks for Visual Recognition
+    用于视觉识别的深度卷积网络的空间金字塔池化
+「2015」「IEEE」「Microsoft」「Kaiming He」「引用：7221」  [[Article]](https://arxiv.org/pdf/1406.4729.pdf)
+
+3.Fast R-CNN  
 「2015」「ICCV」「Microsoft」「R Girshick」「引用：16908」  [[Article]](https://arxiv.org/pdf/1504.08083.pdf)  
