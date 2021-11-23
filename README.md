@@ -96,17 +96,17 @@
 ### 网络结构<span id = "architecture"></span>
 1.Deep residual learning for image recognition  
     用于图像识别的深度残差学习（ResNet）  
-「2015」「CVPR」「Microsoft」   [[Article]](https://arxiv.org/abs/1512.03385)
+「2015」「CVPR」「Microsoft」「Kaiming He」「引用：97068」   [[Article]](https://arxiv.org/abs/1512.03385)
 
 2.Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift  
     批标准化：通过减少内部协变量偏移来加速深度网络训练  
-「2015」「ICML」「Google」   [[Article]](https://arxiv.org/pdf/1502.03167.pdf)
+「2015」「ICML」「Google」「S Ioffe」「引用：31873」   [[Article]](https://arxiv.org/pdf/1502.03167.pdf)
 
 ***
 
 ### 网络模型<span id = "model"></span>
 1.Mask R-CNN  
-「2017」「CVPR」「FAIR」   [[Article]](https://arxiv.org/pdf/1703.06870.pdf)  
+「2017」「CVPR」「FAIR」「Kaiming He」「引用：14842」   [[Article]](https://arxiv.org/pdf/1703.06870.pdf)  
 
 ***
 
@@ -122,7 +122,7 @@
     用于准确目标检测和语义分割的丰富特征层次技术报告（R-CNN）  
 「2014」「CVPR」「UC Berkeley」「R Girshick」「引用：20369」 [[Article]](https://arxiv.org/abs/1311.2524)  
 
-2.Spatial Pyramid Pooling in Deep Convolutional Networks for Visual Recognition
+2.[Spatial Pyramid Pooling in Deep Convolutional Networks for Visual Recognition](https://github.com/massive11/Paper_reading/blob/master/%E5%9B%BE%E5%83%8F%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/Spatial%20Pyramid%20Pooling%20in%20Deep%20Convolutional%20Networks%20for%20Visual%20Recognition.md)
     用于视觉识别的深度卷积网络的空间金字塔池化
 「2015」「IEEE」「Microsoft」「Kaiming He」「引用：7221」  [[Article]](https://arxiv.org/pdf/1406.4729.pdf)
 
@@ -219,15 +219,15 @@
 ### 网络结构
 1.Deep residual learning for image recognition  
     用于图像识别的深度残差学习（ResNet）  
-「2015」「CVPR」「Microsoft」   [[Article]](https://arxiv.org/abs/1512.03385)
+「2015」「CVPR」「Microsoft」「Kaiming He」「引用：97068」   [[Article]](https://arxiv.org/abs/1512.03385)
 
 2.Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift  
     批标准化：通过减少内部协变量偏移来加速深度网络训练  
-「2015」「ICML」「Google」   [[Article]](https://arxiv.org/pdf/1502.03167.pdf)
+「2015」「ICML」「Google」「S Ioffe」「引用：31873」   [[Article]](https://arxiv.org/pdf/1502.03167.pdf)
 
 ### 网络模型
 1.Mask R-CNN  
-「2017」「CVPR」「FAIR」   [[Article]](https://arxiv.org/pdf/1703.06870.pdf)  
+「2017」「CVPR」「FAIR」「Kaiming He」「引用：14842」   [[Article]](https://arxiv.org/pdf/1703.06870.pdf)  
 
 ### 视频目标检测
 1.Flow-Guided Feature Aggregation for Video Object Detection  
