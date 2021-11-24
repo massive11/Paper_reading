@@ -2,12 +2,14 @@
 # 目录
 * [书籍笔记](#book)
   * 深度学习花书笔记
+  * [动手学深度学习V2-李沐(Pytorch)](https://github.com/massive11/learning_dl_from_zero)
 * [论文笔记](#paper)
   * [时间序记录](#time)
 
 
 ## 书籍笔记<span id = "book"></span>
 * 深度学习花书笔记（2021.11.18 更新Ch10 序列建模：循环和递归网络）
+* 动手学深度学习V2-李沐(Pytorch) （2021.11.24 更新04 数据操作与预处理）
 
 ***
 
@@ -240,7 +242,7 @@
 「2014」「CVPR」「UC Berkeley」「R Girshick」「引用：20369」  [[Article]](https://arxiv.org/abs/1311.2524.pdf)  
 
 2.Spatial Pyramid Pooling in Deep Convolutional Networks for Visual Recognition  
-    用于视觉识别的深度卷积网络的空间金字塔池化(SPPnet)
+    用于视觉识别的深度卷积网络的空间金字塔池化(SPPnet)  
 「2015」「IEEE」「Microsoft」「Kaiming He」「引用：7221」  [[Article]](https://arxiv.org/pdf/1406.4729.pdf)
 
 3.Fast R-CNN  
