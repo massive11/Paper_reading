@@ -125,7 +125,7 @@
 「2014」「CVPR」「UC Berkeley」「R Girshick」「引用：20369」 [[Article]](https://arxiv.org/abs/1311.2524)  
 
 2.[Spatial Pyramid Pooling in Deep Convolutional Networks for Visual Recognition](https://github.com/massive11/Paper_reading/blob/master/%E5%9B%BE%E5%83%8F%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/Spatial%20Pyramid%20Pooling%20in%20Deep%20Convolutional%20Networks%20for%20Visual%20Recognition.md)
-    用于视觉识别的深度卷积网络的空间金字塔池化
+    用于视觉识别的深度卷积网络的空间金字塔池化  
 「2015」「IEEE」「Microsoft」「Kaiming He」「引用：7221」  [[Article]](https://arxiv.org/pdf/1406.4729.pdf)
 
 3.[Fast R-CNN](https://github.com/massive11/Paper_reading/blob/master/%E5%9B%BE%E5%83%8F%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/Fast%20R-CNN.md)  
