@@ -14,7 +14,7 @@
 ***
 
 ## 论文笔记<span id = "paper"></span>
-论文共计19篇，其中包含
+论文共计20篇，其中包含
 * [强化学习](#reinforcement) 1篇
 * [语义分割](#segmentation) 5篇
 * [SLAM综述](#SLAM) 2篇
@@ -25,7 +25,7 @@
 * [网络结构](#architecture) 2篇
 * [网络模型](#model) 1篇
 * [视频目标检测](#video) 1篇
-* [图像目标检测](#image) 3篇
+* [图像目标检测](#image) 4篇
 
 ***
 
@@ -132,6 +132,9 @@
 「2015」「ICCV」「Microsoft」「R Girshick」「引用：16908」  [[Article]](https://arxiv.org/pdf/1504.08083.pdf)  
 
 
+4.Faster R-CNN  
+「2015」「NIPS」「Microsoft」「Shaoqing Ren」「Kaiming He」「R Girshick」「引用：25019」  [[Article]](https://arxiv.org/pdf/1506.01497.pdf)  
+
 ***
 
 ## 时间序记录<span id = "time"></span>
@@ -216,7 +219,7 @@
 ***
 
 ## 2021年11月<span id = "2111"></span>
-本月共7篇
+本月共8篇
   
 ### 网络结构
 1.Deep residual learning for image recognition  
@@ -247,3 +250,6 @@
 
 3.Fast R-CNN  
 「2015」「ICCV」「Microsoft」「R Girshick」「引用：16908」  [[Article]](https://arxiv.org/pdf/1504.08083.pdf)  
+
+4.Faster R-CNN  
+「2015」「NIPS」「Microsoft」「Shaoqing Ren」「Kaiming He」「R Girshick」「引用：25019」  [[Article]](https://arxiv.org/pdf/1506.01497.pdf)  
