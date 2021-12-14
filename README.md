@@ -9,14 +9,14 @@
 
 ## 书籍笔记<span id = "book"></span>
 * 深度学习花书笔记（2021.11.18 更新Ch10 序列建模：循环和递归网络）
-* 动手学深度学习V2-李沐(Pytorch) （2021.11.24 更新04 数据操作与预处理）
+* 动手学深度学习V2-李沐(Pytorch) （2021.12.14 更新12 权重衰减）
 
 ***
 
 ## 论文笔记<span id = "paper"></span>
-论文共计20篇，其中包含
+论文共计21篇，其中包含
 * [强化学习](#reinforcement) 1篇
-* [语义分割](#segmentation) 5篇
+* [语义分割](#segmentation) 6篇
 * [SLAM综述](#SLAM) 2篇
 * [深度估计](#estimation) 1篇
 * [视觉定位](#localization) 1篇
@@ -56,6 +56,10 @@
 5.Boosting Real-Time Driving Scene Parsing with Shared Semantics  
     使用共享语义促进实时驾驶场景解析  
 「2020」「ICRA」「SJTU」「SAIC」   [[Article]](https://arxiv.org/pdf/1909.07038.pdf)
+
+6.Fully Convolutional Networks for Semantic Segmentation  
+    用于语义分割的全卷积网络  
+「2015」「CVPR」「UC Berkeley」「Jonathan Long」 「Evan Shelhamer」「引用：26938」   [[Article]](https://arxiv.org/abs/1411.4038)
 
 ***
 
@@ -143,6 +147,7 @@
 * [2021年9月](#2109)
 * [2021年10月](#2110)
 * [2021年11月](#2111)
+* [2021年12月](#2112)
 
 ## 2021年7月<span id = "2107"></span>
 本月共3篇
@@ -253,3 +258,12 @@
 
 4.Faster R-CNN  
 「2015」「NIPS」「Microsoft」「Shaoqing Ren」「Kaiming He」「R Girshick」「引用：25019」  [[Article]](https://arxiv.org/pdf/1506.01497.pdf)  
+
+
+## 2021年12月<span id = "2112"></span>
+本月共1篇
+  
+### 语义分割
+1.Fully Convolutional Networks for Semantic Segmentation  
+    用于语义分割的全卷积网络  
+「2015」「CVPR」「UC Berkeley」「Jonathan Long」 「Evan Shelhamer」「引用：26938」   [[Article]](https://arxiv.org/abs/1411.4038)
