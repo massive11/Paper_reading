@@ -116,7 +116,7 @@
 
 ***
 
-### 视频目标检测<span id = "video"></span>
+### 视频目标检测与分割<span id = "video"></span>
 1.Flow-Guided Feature Aggregation for Video Object Detection  
     用于视频目标检测的流引导特征聚合  
 「2017」「ICCV」「USTC」 「Microsoft」「Xizhou Zhu」「引用：385」  [[Article]](https://arxiv.org/abs/1703.10025)  
