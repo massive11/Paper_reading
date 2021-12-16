@@ -9,12 +9,12 @@
 
 ## 书籍笔记<span id = "book"></span>
 * 深度学习花书笔记（2021.11.18 更新Ch10 序列建模：循环和递归网络）
-* 动手学深度学习V2-李沐(Pytorch) （2021.12.14 更新12 权重衰减）
+* 动手学深度学习V2-李沐(Pytorch) （2021.12.16 更新16）
 
 ***
 
 ## 论文笔记<span id = "paper"></span>
-论文共计21篇，其中包含
+论文共计22篇，其中包含
 * [强化学习](#reinforcement) 1篇
 * [语义分割](#segmentation) 6篇
 * [SLAM综述](#SLAM) 2篇
@@ -24,7 +24,7 @@
 * [车道线检测](#lane) 1篇
 * [网络结构](#architecture) 2篇
 * [网络模型](#model) 1篇
-* [视频目标检测](#video) 1篇
+* [视频目标检测与分割](#video) 2篇
 * [图像目标检测](#image) 4篇
 
 ***
@@ -121,6 +121,9 @@
     用于视频目标检测的流引导特征聚合  
 「2017」「ICCV」「USTC」 「Microsoft」「Xizhou Zhu」「引用：385」  [[Article]](https://arxiv.org/abs/1703.10025)  
 
+2.Reliable Propagation-Correction Modulation for Video Object Segmentation  
+    视频对象分割的可靠传播校正调制  
+「2022」「AAAI」「MSRA」「Xiaohao Xu」「引用：-」  [[Article]](https://arxiv.org/abs/2112.02853)  
 ***
 
 ### 图像目标检测<span id = "image"></span>
@@ -261,9 +264,15 @@
 
 
 ## 2021年12月<span id = "2112"></span>
-本月共1篇
+本月共2篇
   
 ### 语义分割
 1.Fully Convolutional Networks for Semantic Segmentation  
     用于语义分割的全卷积网络  
 「2015」「CVPR」「UC Berkeley」「Jonathan Long」 「Evan Shelhamer」「引用：26938」   [[Article]](https://arxiv.org/abs/1411.4038)
+
+
+### 视频目标分割
+2.Reliable Propagation-Correction Modulation for Video Object Segmentation  
+    视频对象分割的可靠传播校正调制  
+「2022」「AAAI」「MSRA」「Xiaohao Xu」「引用：-」  [[Article]](https://arxiv.org/abs/2112.02853)  
