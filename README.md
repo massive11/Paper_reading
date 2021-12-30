@@ -14,7 +14,7 @@
 ***
 
 ## 论文笔记<span id = "paper"></span>
-论文共计22篇，其中包含
+论文共计23篇，其中包含
 * [强化学习](#reinforcement) 1篇
 * [语义分割](#segmentation) 6篇
 * [SLAM综述](#SLAM) 2篇
@@ -26,6 +26,7 @@
 * [网络模型](#model) 1篇
 * [视频目标检测与分割](#video) 2篇
 * [图像目标检测](#image) 4篇
+* [语义定位](#semantic localization) 1篇
 
 ***
 
@@ -141,6 +142,12 @@
 
 4.Faster R-CNN  
 「2015」「NIPS」「Microsoft」「Shaoqing Ren」「Kaiming He」「R Girshick」「引用：25019」  [[Article]](https://arxiv.org/pdf/1506.01497.pdf)  
+
+
+### 语义定位<span id = "semantic localization"></span>
+1.Visual Semantic Localization based on HD Map for Autonomous Vehicles in Urban Scenarios  
+    基于城市场景自动驾驶汽车的视觉语义定位方法  
+「2021」「ICRA」「Noah's Lab, Huawei」「Huayou Wang」「引用：-」  [[Article]](https://ieeexplore.ieee.org/document/9561459)  
 
 ***
 
@@ -264,7 +271,7 @@
 
 
 ## 2021年12月<span id = "2112"></span>
-本月共2篇
+本月共3篇
   
 ### 语义分割
 1.Fully Convolutional Networks for Semantic Segmentation  
@@ -273,6 +280,12 @@
 
 
 ### 视频目标分割
-2.Reliable Propagation-Correction Modulation for Video Object Segmentation  
+1.Reliable Propagation-Correction Modulation for Video Object Segmentation  
     视频对象分割的可靠传播校正调制  
 「2022」「AAAI」「MSRA」「Xiaohao Xu」「引用：-」  [[Article]](https://arxiv.org/abs/2112.02853)  
+
+
+### 语义定位
+1.Visual Semantic Localization based on HD Map for Autonomous Vehicles in Urban Scenarios  
+    基于城市场景自动驾驶汽车的视觉语义定位方法  
+「2021」「ICRA」「Noah's Lab, Huawei」「Huayou Wang」「引用：-」  [[Article]](https://ieeexplore.ieee.org/document/9561459)  
