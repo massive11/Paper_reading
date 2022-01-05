@@ -1,6 +1,6 @@
 >论文标题：Flow-Guided Feature Aggression for Video Object Detection  
 发表时间：2017  
-研究组织：USTC、Microsoft    
+研究组织：USTC、Microsoft  
 本文标签：视频目标检测、ICCV
 
 

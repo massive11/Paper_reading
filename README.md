@@ -15,17 +15,16 @@
 ***
 
 ## 论文笔记<span id = "paper"></span>
-论文共计23篇，其中包含
+论文共计25篇，其中包含
 * [强化学习](#reinforcement) 1篇
-* [语义分割](#segmentation) 6篇
+* [语义分割](#segmentation) 7篇
 * [SLAM综述](#SLAM) 2篇
 * [深度估计](#estimation) 1篇
 * [视觉定位](#localization) 1篇
 * [自动驾驶](#driving) 1篇
 * [车道线检测](#lane) 1篇
-* [网络结构](#architecture) 2篇
-* [网络模型](#model) 1篇
-* [视频目标检测与分割](#video) 2篇
+* [网络结构](#architecture) 3篇
+* [视频目标检测与分割](#video) 3篇
 * [图像目标检测](#image) 4篇
 * [语义定位](#semantic_localization) 1篇
 
@@ -62,6 +61,9 @@
 6.Fully Convolutional Networks for Semantic Segmentation  
     用于语义分割的全卷积网络  
 「2015」「CVPR」「UC Berkeley」「Jonathan Long」 「Evan Shelhamer」「引用：26938」   [[Article]](https://arxiv.org/abs/1411.4038)
+
+7.Mask R-CNN  
+「2017」「CVPR」「FAIR」「Kaiming He」「引用：14842」   [[Article]](https://arxiv.org/pdf/1703.06870.pdf)  
 
 ***
 
@@ -110,12 +112,8 @@
     批标准化：通过减少内部协变量偏移来加速深度网络训练  
 「2015」「ICML」「Google」「S Ioffe」「引用：31873」   [[Article]](https://arxiv.org/pdf/1502.03167.pdf)
 
-***
-
-### 网络模型<span id = "model"></span>
-1.Mask R-CNN  
-「2017」「CVPR」「FAIR」「Kaiming He」「引用：14842」   [[Article]](https://arxiv.org/pdf/1703.06870.pdf)  
-
+3.Attention is all you need  
+「2017」「NIPS」「Google」「Ashish Vaswani」「引用：33638」   [[Article]](https://arxiv.org/abs/1706.03762)
 ***
 
 ### 视频目标检测与分割<span id = "video"></span>
@@ -126,6 +124,10 @@
 2.Reliable Propagation-Correction Modulation for Video Object Segmentation  
     视频对象分割的可靠传播校正调制  
 「2022」「AAAI」「MSRA」「Xiaohao Xu」「引用：-」  [[Article]](https://arxiv.org/abs/2112.02853)  
+
+3.Deep Feature Flow for Video Recognition  
+    用于视频识别的深度特征流  
+「2017」「CVPR」「USTC」「Microsoft」「Xizhou Zhu」「引用：396」   [[Article]](https://arxiv.org/pdf/1611.07715)
 ***
 
 ### 图像目标检测<span id = "image"></span>
@@ -159,6 +161,7 @@
 * [2021年10月](#2110)
 * [2021年11月](#2111)
 * [2021年12月](#2112)
+* [2022年1月](#2201)
 
 ## 2021年7月<span id = "2107"></span>
 本月共3篇
@@ -290,3 +293,16 @@
 1.Visual Semantic Localization based on HD Map for Autonomous Vehicles in Urban Scenarios  
     基于城市场景自动驾驶汽车的视觉语义定位方法  
 「2021」「ICRA」「Noah's Lab, Huawei」「Huayou Wang」「引用：-」  [[Article]](https://ieeexplore.ieee.org/document/9561459)  
+
+
+## 2022年1月<span id = "2201"></span>
+本月共2篇
+
+### 网络结构
+1.Attention is all you need  
+「2017」「NIPS」「Google」「Ashish Vaswani」「引用：33638」   [[Article]](https://arxiv.org/abs/1706.03762)
+
+### 视频目标检测
+1.Deep Feature Flow for Video Recognition  
+    用于视频识别的深度特征流  
+「2017」「CVPR」「USTC」「Microsoft」「Xizhou Zhu」「引用：396」   [[Article]](https://arxiv.org/pdf/1611.07715)
