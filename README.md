@@ -15,7 +15,7 @@
 ***
 
 ## 论文笔记<span id = "paper"></span>
-论文共计25篇，其中包含
+论文共计26篇，其中包含
 * [强化学习](#reinforcement) 1篇
 * [语义分割](#segmentation) 7篇
 * [SLAM综述](#SLAM) 2篇
@@ -24,7 +24,7 @@
 * [自动驾驶](#driving) 1篇
 * [车道线检测](#lane) 1篇
 * [网络结构](#architecture) 3篇
-* [视频目标检测与分割](#video) 3篇
+* [视频目标检测与分割](#video) 4篇
 * [图像目标检测](#image) 4篇
 * [语义定位](#semantic_localization) 1篇
 
@@ -128,6 +128,10 @@
 3.Deep Feature Flow for Video Recognition  
     用于视频识别的深度特征流  
 「2017」「CVPR」「USTC」「Microsoft」「Xizhou Zhu」「引用：396」   [[Article]](https://arxiv.org/pdf/1611.07715)
+
+4.Towards High Performance Video Object Detection  
+    迈向高性能视频目标检测  
+「2018」「CVPR」「Microsoft」「Xizhou Zhu」「引用：157」   [[Article]](https://arxiv.org/abs/1711.11577)
 ***
 
 ### 图像目标检测<span id = "image"></span>
@@ -296,7 +300,7 @@
 
 
 ## 2022年1月<span id = "2201"></span>
-本月共2篇
+本月共3篇
 
 ### 网络结构
 1.Attention is all you need  
@@ -306,3 +310,8 @@
 1.Deep Feature Flow for Video Recognition  
     用于视频识别的深度特征流  
 「2017」「CVPR」「USTC」「Microsoft」「Xizhou Zhu」「引用：396」   [[Article]](https://arxiv.org/pdf/1611.07715)
+
+2.Towards High Performance Video Object Detection  
+    迈向高性能视频目标检测  
+「2018」「CVPR」「Microsoft」「Xizhou Zhu」「引用：157」   [[Article]](https://arxiv.org/abs/1711.11577)
+

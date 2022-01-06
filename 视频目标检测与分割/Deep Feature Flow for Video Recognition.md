@@ -108,7 +108,8 @@ $${s = \frac{l}{1 + (l - 1) * r}\tag{7}}$$
 * 本文所提出的方法对于不同的网络和识别任务是通用的。 为了获得可靠的评估，采用了最先进的架构和重要的视觉任务。
 
 #### Flow Network
-* 
+* 我们采用最先进的基于 CNN的FlowNet 架构（“simple”版本）作为默认设置。我们还设计了两种复杂度较低的变体。 第一个称为 FlowNet Half，将 FlowNet 每一层中的卷积核数量减少一半，将复杂度减少到 ${\frac{1}{4}}$。 第二个称为 FlowNet Inception，采用 Inception 结构，将复杂度降低到 FlowNet 的${\frac{1}{8}}$。
+* 三个流网络都在合成数据集Flying Chairs上进行预训练，输出的stride是4。输入图像的尺寸减半。因此流域的分辨率是原始分辨率的${\frac{1}{8}}$.
 
 ### 5.Experiments
 
