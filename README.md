@@ -1,5 +1,5 @@
 # Paper_reading
-本仓库用于记录个人学习笔记，主要是室外视觉导航相关的书籍和论文，目前着重关注实例分割领域。目前还处于研究初期，论文笔记的整理比较混乱，希望能在学习过程中逐步提升。
+本仓库用于记录个人学习笔记，主要是室外视觉导航相关的书籍和论文，目前着重关注视频实例分割领域。目前还处于研究初期，论文笔记的整理比较混乱，希望能在学习过程中逐步提升。
 # 目录
 * [书籍笔记](#book)
   * 深度学习花书笔记
@@ -113,6 +113,7 @@
 「2015」「ICML」「Google」「S Ioffe」「引用：31873」   [[Article]](https://arxiv.org/pdf/1502.03167.pdf)
 
 3.Attention is all you need  
+    Transformer  
 「2017」「NIPS」「Google」「Ashish Vaswani」「引用：33638」   [[Article]](https://arxiv.org/abs/1706.03762)
 ***
 
