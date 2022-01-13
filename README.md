@@ -1,5 +1,5 @@
 # Paper_reading
-本仓库用于记录个人学习笔记，主要是室外视觉导航相关的书籍和论文，目前着重关注视频实例分割领域。目前还处于研究初期，论文笔记的整理比较混乱，希望能在学习过程中逐步提升。
+本仓库用于记录个人学习笔记，主要是室外视觉导航相关的书籍和论文，目前着重关注视频目标检测领域。目前还处于研究初期，论文笔记的整理比较混乱，希望能在学习过程中逐步提升。
 # 目录
 * [书籍笔记](#book)
   * 深度学习花书笔记
@@ -15,7 +15,7 @@
 ***
 
 ## 论文笔记<span id = "paper"></span>
-论文共计26篇，其中包含
+论文共计27篇，其中包含
 * [强化学习](#reinforcement) 1篇
 * [语义分割](#segmentation) 7篇
 * [SLAM综述](#SLAM) 2篇
@@ -24,7 +24,7 @@
 * [自动驾驶](#driving) 1篇
 * [车道线检测](#lane) 1篇
 * [网络结构](#architecture) 3篇
-* [视频目标检测与分割](#video) 4篇
+* [视频目标检测与分割](#video) 5篇
 * [图像目标检测](#image) 4篇
 * [语义定位](#semantic_localization) 1篇
 
@@ -134,6 +134,11 @@
 4.Towards High Performance Video Object Detection  
     迈向高性能视频目标检测  
 「2018」「CVPR」「Microsoft Research Asia」「Xizhou Zhu」「引用：157」   [[Article]](https://arxiv.org/abs/1711.11577)
+
+5.ViViT: A Video Vision Transformer  
+   视频版本的Transformer  
+「2021」「ICCV」「Google Research」「Anurag Arnab」「引用：110」   [[Article]](https://arxiv.org/abs/2103.15691)
+
 ***
 
 ### 图像目标检测<span id = "image"></span>
@@ -293,7 +298,7 @@
 ### 视频目标分割
 1.Reliable Propagation-Correction Modulation for Video Object Segmentation  
     视频对象分割的可靠传播校正调制  
-「2022」「AAAI」「MSRA」「Xiaohao Xu」「引用：-」  [[Article]](https://arxiv.org/abs/2112.02853)  
+「2022」「AAAI」「Microsoft Research Asia」「Xiaohao Xu」「引用：-」  [[Article]](https://arxiv.org/abs/2112.02853)  
 
 
 ### 语义定位
@@ -303,7 +308,7 @@
 
 
 ## 2022年1月<span id = "2201"></span>
-本月共3篇
+本月共4篇
 
 ### 网络结构
 1.Attention is all you need  
@@ -312,9 +317,12 @@
 ### 视频目标检测
 1.Deep Feature Flow for Video Recognition  
     用于视频识别的深度特征流  
-「2017」「CVPR」「USTC」「Microsoft」「Xizhou Zhu」「引用：396」   [[Article]](https://arxiv.org/pdf/1611.07715)
+「2017」「CVPR」「USTC」「Microsoft Research Asia」「Xizhou Zhu」「引用：396」   [[Article]](https://arxiv.org/pdf/1611.07715)
 
 2.Towards High Performance Video Object Detection  
     迈向高性能视频目标检测  
-「2018」「CVPR」「Microsoft」「Xizhou Zhu」「引用：157」   [[Article]](https://arxiv.org/abs/1711.11577)
+「2018」「CVPR」「Microsoft Research Asia」「Xizhou Zhu」「引用：157」   [[Article]](https://arxiv.org/abs/1711.11577)
 
+3.ViViT: A Video Vision Transformer  
+   视频版本的Transformer  
+「2021」「ICCV」「Google Research」「Anurag Arnab」「引用：110」   [[Article]](https://arxiv.org/abs/2103.15691)

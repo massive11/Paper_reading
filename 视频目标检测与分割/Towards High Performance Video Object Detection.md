@@ -13,7 +13,7 @@ DFF利用连续帧之间的数据冗余减少特征计算提高了速度，但�
 ## 3.达到什么效果？  
 77.8% mAP at speed of 15.22 fps
 ## 4.存在什么不足？
-
+关键帧的调度对性能影响很大，在这方面也许可以做进一步的提升。
 
 
 # 论文精读
@@ -67,14 +67,21 @@ $${W_{k\rightarrow i}(p) = exp(\frac{F^e_{k\rightarrow i}(p)\cdot F^e_i(p)}{|F^e
 * 尽管FGFA在检测速度上实现了巨大的提升，但还是非常慢。一方面，它在所有帧上密集的评估了特征网络${N_{feat}}$，然而，由于相邻帧之间的外观相似，这是不必要的。另一方面，特征聚合是在多个特征图上实施的，因此需要估计多个流域，在很大程度上降低了检测器的速度。
 * 我们提出稀疏递归特征聚合，它既评估特征网络${N_{feat}}$，又仅在稀疏关键帧上应用递归特征聚合。给定两个连续的关键帧${k}$和${k'}$，${k'}$帧的聚合特征可以通过下式计算得到
 $${\overline{F}_{k'} = W_{k \rightarrow k'}⊙\overline{F}_{k \rightarrow k'} + W_{k' \rightarrow k'}⊙F_{k'}}$$
-其中，${\overline{F}_{k'}=W(\overline{F}_k, M_{k'\rightarrow k})}$，并且⊙代表逐元素乘法。权重在每个位置p通过${W_{k\rightarrow k'}(p) + W_{k'\rightarrow k'}(p) = 1}$相应的进行正则化。
+其中，${\overline{F}_{k'}=W(\overline{F}_k, M_{k'\rightarrow k})}$，并且⊙代表逐元素乘法。权重在每个位置p通过${W_{k\rightarrow k'}(p) + W_{k'\rightarrow k'}(p) = 1}$相应的进行标准化。
 * 这是公式(2)的递归版本，聚合只发生在稀疏的关键帧上。原则上，聚合关键帧特征${\overline{F}_{k}}$聚合了来自所有历史关键帧的丰富信息，然后传播到下一个关键帧${k'}$用于聚合原始特征${F_{k'}}$。
 
 ### 3.2 Spatially-adaptive Partial Feature Updating
 * 尽管DFF通过近似真实的特征$F_i$实现了显著的速度提升，但传播的特征映射${F_{k\rightarrow i}}$容易出错，因为相邻帧之间的某些部分的外观是变化的。
 * 对于非关键帧，我们希望使用特征传播的思想实现高效计算，但是公式(1)受传播质量的影响。为了量化传播的特征${F_{k \rightarrow i}}$是否是$F_i$的良好近似，引入了特征时间一致性${Q_{k \rightarrow i}}$。我们在流网络${N_{flow}}$上增加了一个兄弟分支来预测${Q_{k \rightarrow i}}$，以及运动域${M_{i \rightarrow k}}$，如
 $${\{M_{i \rightarrow k}, Q_{k \rightarrow i} = N_{flow}(I_k, I_i)\} \tag{5}}$$
-* 如果
+* 如果${Q_{k\rightarrow i}(p) \le \tau}$，传播的特征${F_{k\rightarrow i}(p)}$与真实特征${F_i(p)}$是不一致的。也就是说，${F_{k\rightarrow i}(p)}$是一个不好的近似，需要通过真实特征${F_i(p)}$更新。
+* 我们考虑一个针对非关键帧的部分特征更新。帧i的特征通过下式更新：
+$${\hat{F}_i = U_{k\rightarrow i}⊙N_{feat}(I_i) + (1 - U_{k\rightarrow i})⊙F_{k\rightarrow i} \tag{6}}$$
+如果${Q_{k\rightarrow i}(p) \le \tau}$，更新掩码${U_{k\rightarrow i}(p) = 1}$；否则，${U_{k\rightarrow i}(p) = 0}$。我们采用了一种更经济的方式，从${N_{feat}^{(n)}(\hat{F}_i^{(n-1)})}$的第n层重新计算特征${\hat{F}_i^{(n)}}$，其中${\hat{F}_i^{(n)}}$是n-1层的部分更新特征。由此部分特征更新就可以一层一层的计算了。考虑不同层的特征图变化的分辨率，我们使用最近邻插值来更新掩码。
+* 为了进一步提高非关键帧的特征质量，特征聚合的使用也和公式(4)类似：
+$${\overline{F}_i = W_{k \rightarrow i}⊙\overline{F}_{k \rightarrow i} + W_{i \rightarrow i}⊙\hat{F}_i \tag{7}}$$
+其中权重由${W_{k \rightarrow i}(p) + W_{i \rightarrow i}(p) = 1}$在每个位置标准化。
+
 
 ### 3.3 Temporally-adaptive Key Frame Scheduling
 * 高速的核心就是只在稀疏的关键帧上评估特征网络${N_{feat}}$。一个简单的关键帧调度策略以预先固定的速率选择一个关键帧，例如，每 l 帧。 更好的关键帧调度策略应该适应时域中的变化动态。 可以基于特征一致性指标${Q_{k→i}}$设计：
@@ -89,7 +96,10 @@ $${is\_key(Q_{k \rightarrow i}) = [\frac{1}{N_p}\sum_p 1(Q_{k \rightarrow i}(p) 
 * 在一个统一的观点下总结所有方法。
 * 为了有效地计算特征图，使用了空间自适应部分特征更新。 虽然公式(6)只针对非关键帧定义，可以推广到所有帧。 给定一个帧 i 及其前面的关键帧 k，可以使用公式(6) ，总结为
 $${\hat{F}_i = PartialUpdate(I_i, F_k, M_{i \rightarrow k}, Q_{k \rightarrow i}) \tag{10}}$$
-* 对于关键帧，
+* 对于关键帧，${Q_{k \rightarrow i} = - \infty}$，传播特征${F_{k \rightarrow i}}$总是对真实特征${F_i}$的近似不好，我们应该重新计算特征${\hat{F}_i = N_{feat}(I_i)}$。 对于非关键帧，当${k\rightarrow i = +\infty}$时，传播的特征${F_{k\rightarrow i}}$总是很好地逼近真实特征$F_i$，我们直接使用前一个关键帧的传播特征${\hat{F}_i = F_{k\rightarrow i}}$。
+* 为了增强部分更新的特征图$F_i$，使用了特征聚合。 虽然公式（4）只定义了关键帧的稀疏递归特征聚合，公式（7）只定义了部分更新的非关键帧的特征聚合。 公式（4）可以看作是公式（7）的退化版本，假设${i = k'}$，${\hat{F}_i = F_{k'}}$。 因此，特征聚合总是按照公式（7）执行，总结为
+$${\overline{F}_i = g(\overline{F}_k, \hat{F}_i, M_{i\rightarrow k}), \tag{11}}$$
+* 为了进一步提高特征计算的效率，还使用了时间自适应关键帧调度
 
 ### 3.5 Network Architecture
 * 我们在模型中引入了不同子网络的化身。
