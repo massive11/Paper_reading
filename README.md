@@ -1,5 +1,5 @@
 # Paper_reading
-本仓库用于记录个人学习笔记，主要是室外视觉导航相关的书籍和论文，目前着重关注视频目标检测领域。目前还处于研究初期，论文笔记的整理比较混乱，希望能在学习过程中逐步提升。
+本仓库用于记录个人学习笔记，主要是室外视觉导航相关的书籍和论文，着重关注视频目标检测领域。目前还处于研究初期，论文笔记的整理比较混乱，希望能在学习过程中逐步提升。
 # 目录
 * [书籍笔记](#book)
   * 深度学习花书笔记
@@ -15,7 +15,7 @@
 ***
 
 ## 论文笔记<span id = "paper"></span>
-论文共计27篇，其中包含
+论文共计28篇，其中包含
 * [强化学习](#reinforcement) 1篇
 * [语义分割](#segmentation) 7篇
 * [SLAM综述](#SLAM) 2篇
@@ -25,7 +25,7 @@
 * [车道线检测](#lane) 1篇
 * [网络结构](#architecture) 3篇
 * [视频目标检测与分割](#video) 5篇
-* [图像目标检测](#image) 4篇
+* [图像目标检测](#image) 5篇
 * [语义定位](#semantic_localization) 1篇
 
 ***
@@ -153,9 +153,12 @@
 3.[Fast R-CNN](https://github.com/massive11/Paper_reading/blob/master/%E5%9B%BE%E5%83%8F%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/Fast%20R-CNN.md)  
 「2015」「ICCV」「Microsoft」「R Girshick」「引用：16908」  [[Article]](https://arxiv.org/pdf/1504.08083.pdf)  
 
-
 4.Faster R-CNN  
 「2015」「NIPS」「Microsoft」「Shaoqing Ren」「Kaiming He」「R Girshick」「引用：25019」  [[Article]](https://arxiv.org/pdf/1506.01497.pdf)  
+
+5.An Image is Worth 16X16 Words: Transformer for Image Recognition at Scale  
+    用于大规模图像识别的Transformer（ViT）
+「2021」「ICLR」「Google Research」「Alexey Dosovitskiy」「引用：2116」   [[Article]](https://arxiv.org/abs/2010.11929)
 
 ***
 
@@ -308,7 +311,7 @@
 
 
 ## 2022年1月<span id = "2201"></span>
-本月共4篇
+本月共5篇
 
 ### 网络结构
 1.Attention is all you need  
@@ -326,3 +329,8 @@
 3.ViViT: A Video Vision Transformer  
    视频版本的Transformer  
 「2021」「ICCV」「Google Research」「Anurag Arnab」「引用：110」   [[Article]](https://arxiv.org/abs/2103.15691)
+
+### 图像目标检测
+1.An Image is Worth 16X16 Words: Transformer for Image Recognition at Scale  
+    用于大规模图像识别的Transformer（ViT）
+「2021」「ICLR」「Google Research」「Alexey Dosovitskiy」「引用：2116」   [[Article]](https://arxiv.org/abs/2010.11929)
