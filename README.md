@@ -15,7 +15,7 @@
 ***
 
 ## 论文笔记<span id = "paper"></span>
-论文共计28篇，其中包含
+论文共计29篇，其中包含
 * [强化学习](#reinforcement) 1篇
 * [语义分割](#segmentation) 7篇
 * [SLAM综述](#SLAM) 2篇
@@ -24,8 +24,8 @@
 * [自动驾驶](#driving) 1篇
 * [车道线检测](#lane) 1篇
 * [网络结构](#architecture) 3篇
-* [视频目标检测与分割](#video) 5篇
-* [图像目标检测](#image) 5篇
+* [视频目标识别、检测与分割](#video) 5篇
+* [图像目标识别、检测与分割](#image) 6篇
 * [语义定位](#semantic_localization) 1篇
 
 ***
@@ -118,7 +118,7 @@
 
 ***
 
-### 视频目标检测与分割<span id = "video"></span>
+### 视频目标识别、检测与分割<span id = "video"></span>
 1.Flow-Guided Feature Aggregation for Video Object Detection  
     用于视频目标检测的流引导特征聚合  
 「2017」「ICCV」「USTC」 「Microsoft Research Asia」「Xizhou Zhu」「引用：385」  [[Article]](https://arxiv.org/abs/1703.10025)  
@@ -141,7 +141,7 @@
 
 ***
 
-### 图像目标检测<span id = "image"></span>
+### 图像目标识别、检测与分割<span id = "image"></span>
 1.[Rich feature hierarchies for accurate object detection and semantic segmentation Tech report](https://github.com/massive11/Paper_reading/blob/master/%E5%9B%BE%E5%83%8F%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/Rich%20feature%20hierarchies%20for%20accurate%20object%20detection%20and%20semantic%20segmentation%20Tech%20report.md)  
     用于准确目标检测和语义分割的丰富特征层次技术报告（R-CNN）  
 「2014」「CVPR」「UC Berkeley」「R Girshick」「引用：20369」 [[Article]](https://arxiv.org/abs/1311.2524)  
@@ -157,8 +157,12 @@
 「2015」「NIPS」「Microsoft」「Shaoqing Ren」「Kaiming He」「R Girshick」「引用：25019」  [[Article]](https://arxiv.org/pdf/1506.01497.pdf)  
 
 5.An Image is Worth 16X16 Words: Transformer for Image Recognition at Scale  
-    用于大规模图像识别的Transformer（ViT）
+    一张图像等价于很多16X16大小的单词：用于大规模图像识别的Transformer（ViT）
 「2021」「ICLR」「Google Research」「Alexey Dosovitskiy」「引用：2116」   [[Article]](https://arxiv.org/abs/2010.11929)
+
+6.Masked Autoencoders Are Scalable Vision Learners  
+    Masked Autoencoders 是可扩展的视觉学习器  
+「2021.11」「-」「Facebook AI Research」「Kaiming He」「引用：17」   [[Article]](https://arxiv.org/abs/2111.06377)
 
 ***
 
@@ -268,12 +272,12 @@
 1.Mask R-CNN  
 「2017」「CVPR」「FAIR」「Kaiming He」「引用：14842」   [[Article]](https://arxiv.org/pdf/1703.06870.pdf)  
 
-### 视频目标检测
+### 视频目标识别、检测与分割
 1.Flow-Guided Feature Aggregation for Video Object Detection  
     用于视频目标检测的流引导特征聚合  
 「2017」「ICCV」「USTC」 「Microsoft」「Xizhou Zhu」「引用：385」  [[Article]](https://arxiv.org/abs/1703.10025)  
 
-### 图像目标检测
+### 图像目标识别、检测与分割
 1.Rich feature hierarchies for accurate object detection and semantic segmentation Tech report  
     用于准确目标检测和语义分割的丰富特征层次技术报告（R-CNN）  
 「2014」「CVPR」「UC Berkeley」「R Girshick」「引用：20369」  [[Article]](https://arxiv.org/abs/1311.2524.pdf)  
@@ -298,7 +302,7 @@
 「2015」「CVPR」「UC Berkeley」「Jonathan Long」 「Evan Shelhamer」「引用：26938」   [[Article]](https://arxiv.org/abs/1411.4038)
 
 
-### 视频目标分割
+### 视频目标识别、检测与分割
 1.Reliable Propagation-Correction Modulation for Video Object Segmentation  
     视频对象分割的可靠传播校正调制  
 「2022」「AAAI」「Microsoft Research Asia」「Xiaohao Xu」「引用：-」  [[Article]](https://arxiv.org/abs/2112.02853)  
@@ -311,13 +315,13 @@
 
 
 ## 2022年1月<span id = "2201"></span>
-本月共5篇
+本月共6篇
 
 ### 网络结构
 1.Attention is all you need  
 「2017」「NIPS」「Google」「Ashish Vaswani」「引用：33638」   [[Article]](https://arxiv.org/abs/1706.03762)
 
-### 视频目标检测
+### 视频目标识别、检测与分割
 1.Deep Feature Flow for Video Recognition  
     用于视频识别的深度特征流  
 「2017」「CVPR」「USTC」「Microsoft Research Asia」「Xizhou Zhu」「引用：396」   [[Article]](https://arxiv.org/pdf/1611.07715)
@@ -330,7 +334,11 @@
    视频版本的Transformer  
 「2021」「ICCV」「Google Research」「Anurag Arnab」「引用：110」   [[Article]](https://arxiv.org/abs/2103.15691)
 
-### 图像目标检测
+### 图像目标识别、检测与分割
 1.An Image is Worth 16X16 Words: Transformer for Image Recognition at Scale  
-    用于大规模图像识别的Transformer（ViT）
+    一张图像等价于很多16X16大小的单词：用于大规模图像识别的Transformer（ViT）
 「2021」「ICLR」「Google Research」「Alexey Dosovitskiy」「引用：2116」   [[Article]](https://arxiv.org/abs/2010.11929)
+
+2.Masked Autoencoders Are Scalable Vision Learners  
+    Masked Autoencoders 是可扩展的视觉学习器  
+「2021.11」「-」「Facebook AI Research」「Kaiming He」「引用：17」   [[Article]](https://arxiv.org/abs/2111.06377)
