@@ -340,5 +340,5 @@
 「2021」「ICLR」「Google Research」「Alexey Dosovitskiy」「引用：2116」   [[Article]](https://arxiv.org/abs/2010.11929)
 
 2.Masked Autoencoders Are Scalable Vision Learners  
-    Masked Autoencoders 是可扩展的视觉学习器  
+    带掩码的自编码器是一个可拓展的视觉学习器  
 「2021.11」「-」「Facebook AI Research」「Kaiming He」「引用：17」   [[Article]](https://arxiv.org/abs/2111.06377)
