@@ -70,6 +70,7 @@
 * 我们在InageNet-1K训练集上进行自监督预训练。然后我们进行监督训练，通过 (i) 端到端微调或 (ii) 线性探测来评估表示。 我们报告了单个 224×224 crop的 top-1 验证准确度。 详细信息在附录 A.1 中。
 ### Baseline：ViT-Large
 * 我们使用ViT-Large作为我们消融实验的backbone。ViT-L 非常大（比 ResNet-50 大一个数量级）并且容易过拟合。 以下是从头开始训练的 ViT-L 与从我们的基线 MAE 微调的对比：
+
 | scratch,original | scratch, our impl. | baseline MAE |
 | :----:| :----: | :----: |
 | 76.5 | 82.5 | 84.9 |

@@ -1,6 +1,13 @@
 # Paper_reading
-本仓库用于记录个人学习笔记，主要是室外视觉导航相关的书籍和论文，着重关注视频目标检测领域。目前还处于研究初期，论文笔记的整理比较混乱，希望能在学习过程中逐步提升。
+
+***
+
+本仓库用于记录个人学习笔记，主要是自动驾驶的视觉感知相关技术涉及到的书籍和论文，目前着重关注视频目标检测领域。尚处研究初期，论文笔记的整理比较混乱，努力逐步提升中。
+
 # 目录
+
+***
+
 * [书籍笔记](#book)
   * 深度学习花书笔记
   * [动手学深度学习V2-李沐(Pytorch)](https://github.com/massive11/learning_dl_from_zero)
@@ -9,29 +16,44 @@
 
 
 ## 书籍笔记<span id = "book"></span>
+
+***
+
 * 深度学习花书笔记（2021.11.18 更新Ch10 序列建模：循环和递归网络）
 * 动手学深度学习V2-李沐(Pytorch) （2021.12.16 更新16）
 
 ***
 
 ## 论文笔记<span id = "paper"></span>
-论文共计30篇，其中包含
-* [视频目标识别、检测与分割](#video) 5篇
-* [图像目标识别、检测与分割](#image) 6篇
-* [语义分割](#segmentation) 7篇
-* [网络结构](#architecture) 3篇
-* [强化学习](#reinforcement) 1篇
-* [SLAM综述](#SLAM) 2篇
-* [深度估计](#estimation) 1篇
-* [视觉定位](#localization) 1篇
-* [自动驾驶](#driving) 1篇
-* [车道线检测](#lane) 1篇
-* [语义定位](#semantic_localization) 1篇
-* [非监督学习](#unsupervised) 1篇
 
 ***
 
-### 视频目标识别、检测与分割<span id = "video"></span>
+论文共计30篇，其中包含
+
+| 主题 | 数量 |
+| ------ | :------: |
+| [视频目标识别、检测与分割](#video) | 5篇 |
+| [图像目标识别、检测与分割](#image) | 6篇 |
+| [语义分割](#segmentation) | 7篇 |
+| [网络结构](#architecture) | 3篇 |
+| [强化学习](#reinforcement) | 1篇 |
+| [SLAM综述](#SLAM) | 2篇 |
+| [深度估计](#estimation) | 1篇 |
+| [视觉定位](#localization) | 1篇 |
+| [自动驾驶](#driving) | 1篇 |
+| [车道线检测](#lane) | 1篇 |
+| [语义定位](#semantic_localization) | 1篇 |
+| [非监督学习](#unsupervised) | 1篇 |
+
+***
+
+| 主题 | 论文 | 时间 | 会议/期刊 | 研究机构 | 作者 | 标签 | 引用量 | 原文 |
+| --- | :----: | :----: | :----: | :----: | :----: | :----: | ----: | :----: |
+| 视频目标识别、检测与分割<span id = "video"></span> | [Flow-Guided Feature Aggregation for Video Object Detection](https://github.com/massive11/Paper_reading/blob/master/%E8%A7%86%E9%A2%91%E7%9B%AE%E6%A0%87%E8%AF%86%E5%88%AB%E3%80%81%E6%A3%80%E6%B5%8B%E4%B8%8E%E5%88%86%E5%89%B2/Flow-Guided%20Feature%20Aggression%20for%20Video%20Object%20Detection.md) | 2017 | ICCV | USTC、Microsoft Research Asia | Xizhou Zhu | optical flow | 385 | [[Article]](https://arxiv.org/abs/1703.10025) |
+|  | [Reliable Propagation-Correction Modulation for Video Object Segmentation](https://github.com/massive11/Paper_reading/blob/master/%E8%A7%86%E9%A2%91%E7%9B%AE%E6%A0%87%E8%AF%86%E5%88%AB%E3%80%81%E6%A3%80%E6%B5%8B%E4%B8%8E%E5%88%86%E5%89%B2/Reliable%20Propagation-Correction%20Modulation%20for%20Video%20Object%20Segmentation.md) | 2022 | AAAI | Microsoft Research Asia | Xiaohao Xu | - | - | [[Article]](https://arxiv.org/abs/2112.02853) |
+
+
+### 视频目标识别、检测与分割
 1.[Flow-Guided Feature Aggregation for Video Object Detection](https://github.com/massive11/Paper_reading/blob/master/%E8%A7%86%E9%A2%91%E7%9B%AE%E6%A0%87%E8%AF%86%E5%88%AB%E3%80%81%E6%A3%80%E6%B5%8B%E4%B8%8E%E5%88%86%E5%89%B2/Flow-Guided%20Feature%20Aggression%20for%20Video%20Object%20Detection.md)  
     用于视频目标检测的流引导特征聚合  
 「2017」「ICCV」「USTC」 「Microsoft Research Asia」「Xizhou Zhu」「引用：385」  [[Article]](https://arxiv.org/abs/1703.10025)  
@@ -351,7 +373,7 @@
     带掩码的自编码器是一个可拓展的视觉学习器  
 「2021.11」「-」「Facebook AI Research」「Kaiming He」「引用：17」   [[Article]](https://arxiv.org/abs/2111.06377)
 
-## 非监督学习
+### 非监督学习
 1.Momentum Contrast for Unsupervised Visual Representation Learning  
   一种非监督视觉表示学习的动量对比方法  
 「2020」「CVPR」「Facebook AI Research」「Kaiming He」「引用：2400」   [[Article]](https://arxiv.org/abs/1911.05722)
