@@ -2,6 +2,7 @@
 发表时间：2021  
 研究组织：FAIR    
 本文标签：视觉目标识别
+论文讲解：https://www.bilibili.com/video/BV1sq4y1q77t/?spm_id_from=333.788
 
 注：标题中的masked取自BERT中类似完形填空的思想；autoencoders中的auto并不是自动的意思，二是自的意思，如自回归模型，这一大类模型的特点是标签和样本来自于同一个东西。
 

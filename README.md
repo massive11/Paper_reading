@@ -3,7 +3,7 @@
 
 # 目录
 * [书籍笔记](#book)
-  * 深度学习花书笔记
+  * [深度学习花书笔记](https://github.com/massive11/Paper_reading/tree/master/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E8%8A%B1%E4%B9%A6%E7%AC%94%E8%AE%B0)
   * [动手学深度学习V2-李沐(Pytorch)](https://github.com/massive11/learning_dl_from_zero)
 * [论文笔记](#paper)
   * [时间序记录](#time)
@@ -42,8 +42,8 @@
 ### 视频目标识别、检测与分割<span id = "video"></span>
 | 论文 | 时间 | 会议 | 研究机构 | 作者 | 引用 | 原文 |
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
-| [Flow-Guided Feature Aggregation for Video Object Detection](https://github.com/massive11/Paper_reading/blob/master/%E8%A7%86%E9%A2%91%E7%9B%AE%E6%A0%87%E8%AF%86%E5%88%AB%E3%80%81%E6%A3%80%E6%B5%8B%E4%B8%8E%E5%88%86%E5%89%B2/Flow-Guided%20Feature%20Aggression%20for%20Video%20Object%20Detection.md) | 2017 | ICCV | USTC MSRA | Xizhou Zhu | 385 | [Article](https://arxiv.org/abs/1703.10025) |
 | [Deep Feature Flow for Video Recognition](https://github.com/massive11/Paper_reading/blob/master/%E8%A7%86%E9%A2%91%E7%9B%AE%E6%A0%87%E8%AF%86%E5%88%AB%E3%80%81%E6%A3%80%E6%B5%8B%E4%B8%8E%E5%88%86%E5%89%B2/Deep%20Feature%20Flow%20for%20Video%20Recognition.md) | 2017 | CVPR | USTC MSRA | Xizhou Zhu | 396 | [Article](https://arxiv.org/pdf/1611.07715) |
+| [Flow-Guided Feature Aggregation for Video Object Detection](https://github.com/massive11/Paper_reading/blob/master/%E8%A7%86%E9%A2%91%E7%9B%AE%E6%A0%87%E8%AF%86%E5%88%AB%E3%80%81%E6%A3%80%E6%B5%8B%E4%B8%8E%E5%88%86%E5%89%B2/Flow-Guided%20Feature%20Aggression%20for%20Video%20Object%20Detection.md) | 2017 | ICCV | USTC MSRA | Xizhou Zhu | 385 | [Article](https://arxiv.org/abs/1703.10025) |
 | [Towards High Performance Video Object Detection](https://github.com/massive11/Paper_reading/blob/master/%E8%A7%86%E9%A2%91%E7%9B%AE%E6%A0%87%E8%AF%86%E5%88%AB%E3%80%81%E6%A3%80%E6%B5%8B%E4%B8%8E%E5%88%86%E5%89%B2/Towards%20High%20Performance%20Video%20Object%20Detection.md) | 2018 | CVPR | MSRA | Xizhou Zhu | 157 | [Article](https://arxiv.org/abs/1711.11577) |
 | [ViViT: A Video Vision Transformer](https://github.com/massive11/Paper_reading/blob/master/%E8%A7%86%E9%A2%91%E7%9B%AE%E6%A0%87%E8%AF%86%E5%88%AB%E3%80%81%E6%A3%80%E6%B5%8B%E4%B8%8E%E5%88%86%E5%89%B2/ViViT:%20A%20Video%20Vision%20Transformer.md) | 2021 | ICCV | Google Research | Anurag Arnab | 110 | [Article](https://arxiv.org/abs/2103.15691) |
 | [Reliable Propagation-Correction Modulation for Video Object Segmentation](https://github.com/massive11/Paper_reading/blob/master/%E8%A7%86%E9%A2%91%E7%9B%AE%E6%A0%87%E8%AF%86%E5%88%AB%E3%80%81%E6%A3%80%E6%B5%8B%E4%B8%8E%E5%88%86%E5%89%B2/Reliable%20Propagation-Correction%20Modulation%20for%20Video%20Object%20Segmentation.md) | 2022 | AAAI | MSRA | Xiaohao Xu | - | [Article](https://arxiv.org/abs/2112.02853) |
@@ -55,7 +55,7 @@
 | 论文 | 时间 | 会议 | 研究机构 | 作者 | 引用 | 原文 |
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | [Rich feature hierarchies for accurate object detection and semantic segmentation Tech report](https://github.com/massive11/Paper_reading/blob/master/%E5%9B%BE%E5%83%8F%E7%9B%AE%E6%A0%87%E8%AF%86%E5%88%AB%E3%80%81%E6%A3%80%E6%B5%8B%E4%B8%8E%E5%88%86%E5%89%B2/Rich%20feature%20hierarchies%20for%20accurate%20object%20detection%20and%20semantic%20segmentation%20Tech%20report.md) | 2014 | CVPR | UC Berkeley | R Girshick | 20369 | [Article](https://arxiv.org/abs/1311.2524) |  
-| [Spatial Pyramid Pooling in Deep Convolutional Networks for Visual Recognition](https://github.com/massive11/Paper_reading/blob/master/%E5%9B%BE%E5%83%8F%E7%9B%AE%E6%A0%87%E8%AF%86%E5%88%AB%E3%80%81%E6%A3%80%E6%B5%8B%E4%B8%8E%E5%88%86%E5%89%B2/Spatial%20Pyramid%20Pooling%20in%20Deep%20Convolutional%20Networks%20for%20Visual%20Recognition.md) | 2015 | IEEE | Microsoft | Kaiming He | 7221 | [Article](https://arxiv.org/pdf/1406.4729.pdf) |
+| [Spatial Pyramid Pooling in Deep Convolutional Networks for Visual Recognition](https://github.com/massive11/Paper_reading/blob/master/%E5%9B%BE%E5%83%8F%E7%9B%AE%E6%A0%87%E8%AF%86%E5%88%AB%E3%80%81%E6%A3%80%E6%B5%8B%E4%B8%8E%E5%88%86%E5%89%B2/Spatial%20Pyramid%20Pooling%20in%20Deep%20Convolutional%20Networks%20for%20Visual%20Recognition.md) | 2015 | SCI | Microsoft | Kaiming He | 7221 | [Article](https://arxiv.org/pdf/1406.4729.pdf) |
 | [Fast R-CNN](https://github.com/massive11/Paper_reading/blob/master/%E5%9B%BE%E5%83%8F%E7%9B%AE%E6%A0%87%E8%AF%86%E5%88%AB%E3%80%81%E6%A3%80%E6%B5%8B%E4%B8%8E%E5%88%86%E5%89%B2/Fast%20R-CNN.md) | 2015 | ICCV | Microsoft | R Girshick  | 16908 | [Article](https://arxiv.org/pdf/1504.08083.pdf) | 
 | [Faster R-CNN](https://github.com/massive11/Paper_reading/blob/master/%E5%9B%BE%E5%83%8F%E7%9B%AE%E6%A0%87%E8%AF%86%E5%88%AB%E3%80%81%E6%A3%80%E6%B5%8B%E4%B8%8E%E5%88%86%E5%89%B2/Faster%20R-CNN.md) | 2015 | NIPS | Microsoft | Shaoqing Ren | 25019 | [Article](https://arxiv.org/pdf/1506.01497.pdf) |  
 | [An Image is Worth 16X16 Words: Transformer for Image Recognition at Scale](https://github.com/massive11/Paper_reading/blob/master/%E5%9B%BE%E5%83%8F%E7%9B%AE%E6%A0%87%E8%AF%86%E5%88%AB%E3%80%81%E6%A3%80%E6%B5%8B%E4%B8%8E%E5%88%86%E5%89%B2/AN%20IMAGE%20IS%20WORTH%2016X16%20WORDS:%20TRANSFORMERS%20FOR%20IMAGE%20RECOGNITION%20AT%20SCALE.md) | 2021 | ICLR | Google Research | Alexey Dosovitskiy | 2116 | [Article](https://arxiv.org/abs/2010.11929) |
@@ -99,8 +99,8 @@
 
 | 论文 | 时间 | 会议 | 研究机构 | 作者 | 引用 | 原文 |
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
-| 基于单目视觉的同时定位与地图构建方法综述 | 2016 | 计算机辅助设计与图形学学报 | Zhejiang University | 刘浩敏 | 385 | [Article](http://www.cad.zju.edu.cn/home/gfzhang/projects/JCAD2016-SLAM-survey.pdf) |
 | 基于图优化的同时定位与地图创建综述 | 2013 | 机器人 | South China University of Technology  |  梁明杰 | 315 | [Article](http://robot.sia.cn/CN/10.3724/SP.J.1218.2013.00500) |
+| 基于单目视觉的同时定位与地图构建方法综述 | 2016 | 计算机辅助设计与图形学学报 | Zhejiang University | 刘浩敏 | 385 | [Article](http://www.cad.zju.edu.cn/home/gfzhang/projects/JCAD2016-SLAM-survey.pdf) |
 
 ***
 
@@ -243,6 +243,6 @@
 | - | 视频目标识别、检测与分割 | ViViT | ICCV 2021 | [Article](https://arxiv.org/abs/2103.15691)
 | - | 图像目标识别、检测与分割 | ViT | ICLR 2021 | [Article](https://arxiv.org/abs/2010.11929)
 | - | 图像目标识别、检测与分割 | MAE | arxiv 2021 | [Article](https://arxiv.org/abs/2111.06377)
-| 1.17 | 非监督学习 | MoCo | CVPR 2020 | [Article](https://arxiv.org/abs/1911.05722) |
+| 1.18 | 非监督学习 | MoCo | CVPR 2020 | [Article](https://arxiv.org/abs/1911.05722) |
 
 ***
