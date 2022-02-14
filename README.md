@@ -234,17 +234,23 @@
 ***
 
 ## 2022年1月<span id = "2201"></span>
-本月共8篇
+本月共7篇
 
 | 日期 | 主题 | 论文 | 来源 | 原文 |
 | :----: | ----- | ---- | :----: | :----: |
 | - | 网络结构 | Transformer | NIPS 2017 | [Article](https://arxiv.org/abs/1706.03762)
 | - | 视频目标识别、检测与分割 | DFF | CVPR 2017 | [Article](https://arxiv.org/pdf/1611.07715)
 | - | 视频目标识别、检测与分割 | Towards High Performance Video Object Detection | CVPR 2018 | [Article](https://arxiv.org/abs/1711.11577)
-| - | 视频目标识别、检测与分割 | ViViT | ICCV 2021 | [Article](https://arxiv.org/abs/2103.15691)
 | - | 图像目标识别、检测与分割 | ViT | ICLR 2021 | [Article](https://arxiv.org/abs/2010.11929)
 | - | 图像目标识别、检测与分割 | MAE | arxiv 2021 | [Article](https://arxiv.org/abs/2111.06377)
 | 1.18 | 非监督学习 | MoCo | CVPR 2020 | [Article](https://arxiv.org/abs/1911.05722) |
 | 1.20 | 图像目标识别、检测与分割 | Swin Transformer | ICCV 2021 | [Article](https://arxiv.org/abs/2103.14030) |
 
 ***
+
+## 2022年2月<span id = "2201"></span>
+本月共1篇
+
+| 日期 | 主题 | 论文 | 来源 | 原文 |
+| :----: | ----- | ---- | :----: | :----: |
+| 2.14 | 视频目标识别、检测与分割 | ViViT | ICCV 2021 | [Article](https://arxiv.org/abs/2103.15691)
