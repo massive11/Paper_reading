@@ -41,7 +41,44 @@
 ### 3.1 Overview of Vision Transformers（ViT）
 * ViT以最小的改变使Transformer架构能够处理二维图像。特别的，ViT提取了N个非重叠的图像块，${x_i \in R^{h \times \omega}}$，执行线性投影，然后将它们光栅化为 1D 的tokens ${z_i ∈ R^d}$。 输入到下述Transformer 编码器的tokens序列是
 $${z = [z_{cls}, Ex_1, Ex_2, ..., E_{x_N}] \tag{1}}$$
-其中，E的投影与2D卷积相当。
+其中，E的投影与2D卷积相当。一个可选的学习到的分类token${z_{cls}}$放置在序列的前边，它在encoder的最后一层的表示作为分类层使用的最终表示。另外，一个可学习的位置嵌入，${p \in R^{N\times d}}$，被添加到tokens中用于保存位置信息，因为transformer中后续的self-attention操作是置换不变的。然后tokens通过由一系列 L 个transformer层组成的编码器。 每层 l 包括多头自注意、层归一化 (LN) 和 MLP 块，如下所示：
+$${y^l = MSA(LN(z^l)) + z^l \tag{2}}$$
+$${z^{l+1} = MLP(LN(y^l)) + y^l \tag{3}}$$
+* MLP包含两个由 GELU 非线性分隔的线性投影组成，并且token的维数 d 在所有层中保持固定。 最后，线性分类器用于基于${z^L_{cls} ∈ R^d}$对编码输入进行分类，如果它被预先添加到输入中，否则所有标记的全局平均池化$z^L$。
+* 由于ViT的基础——transformer，是一个灵活的架构，能够在任意输入的tokens序列上操作，我们将详细描述tokenising的策略。
+
+### 3.2 Embedding video clips
+* 我们考虑两个简单的方法来将视频${V \in R^{T \times H \times W \times C}}$映射到tokens序列${\hat{z} \in R^{n_t \times n_h \times n_w \times d}}$。然后我们添加位置嵌入，reshape成${R^{N \times d}}$来得到z，transformer的输入。
+#### Uniform frame sampling
+* 对输入视频进行标记的一种直接方法是从输入视频剪辑中均匀采样 nt 帧，使用与 ViT 相同的方法独立嵌入每个 2D 帧，并将所有这些标记连接在一起。具体来说，如果从每一帧中提取$n_h·n_w$个非重叠图像块，则总共$n_t·n_h·n_w$个令牌将通过transformer编码器转发。 直观地说，这个过程可以看作是简单地构建一个大的 2D 图像，以便在 ViT 之后进行标记。 我们注意到这是(Is space-time attention all you need for video understanding?)的并行工作所采用的输入嵌入方法。
+
+#### Tubelet embedding
+![avatar](./img/ViViT-f3.png)
+* 如图3所示，另一种可选的方式是从输入视频中提取非重叠的时空tubes，然后线性投影到$R^d$。这个方法是 ViT 嵌入到 3D 的扩展，对应于 3D 卷积。对于一个维度为$t\times h \times \omega$的tubelet，$n_t = \lfloor \frac{T}{t} \rfloor$，$n_h = \lfloor \frac{H}{h} \rfloor$，$n_w = \lfloor \frac{W}{w} \rfloor$，tokens是分别从时间、高度和宽度维度上提取到的。因此，较小的tubelet尺寸会产生更多的tokens，从而增加计算量。 直观地说，这种方法在标记化过程中融合了时空信息，这与“统一帧采样”相反，其中来自不同帧的时间信息由transformer融合。
+
+### 3.3 Transformer Models for Video
+* 我们提出了几种基于Transformer的架构。我们从 ViT 的直接扩展开始，它对所有时空标记之间的成对交互进行建模，然后开发更有效的变体，在transformer架构上将输入视频的空间和时间维度分解为不同的级别。
+#### Model 1:Spatio-temporal attention
+* 该模型通过Transformer编码器简单地转发从视频 z0 中提取的所有时空tokens。 我们注意到，(Is space-time attention all you need for video understanding?)也在他们的“联合时空”模型中同时探索了这一点。 与感受野随层数线性增长的 CNN 架构相比，每个transformer层都对所有时空标记之间的所有成对交互进行建模，因此它对来自第一层的视频中的远程交互进行建模。
+* 然而，由于它对所有成对交互建模，多头自注意力（MSA）的复杂度与tokens的数量成二次关系。这种复杂性与视频相关，因为tokens的数量随着输入帧的数量线性增加，并激励下一步开发更高效的架构。
+
+#### Model 2:Factorised encoder
+![avatar](./img/ViViT-f4.png)
+* 如图4所示，这个模型由两个分开的transformer encoder组成。第一个是spatial encoder，只建模从同一时间序列上提取到的tokens之间的交互。每个时间序列的表示$h_i \in R^d$是在$L_s$层之后得到的:如果它是输入的前置，那么它是一个编码的分类token$z_{cls}^{L_s}$，否则是spatial encoder输出的tokens的全局平均池化$z^{L_s}$。
+* frame level的表示$h_i$连接成$H \in R^{n_t \times$ d}$，然后通过由 $L_t$ transformer层组成的temporal encoder转发，以模拟来自不同时间索引的tokens之间的交互。 然后最终对该编码器的输出token进行分类。
+* 这种架构对应于时间信息的“后期融合”，初始空间编码器与用于图像分类的空间编码器相同。 因此，它类似于 CNN 架构，它们首先提取每帧特征，然后在对它们进行分类之前将它们聚合成最终表示。尽管这个模型的transformer层比model 1多（因此具有更多的参数），它需要更少的FLOPs，因为两个分开的transformer块的复杂度是${(n_h \cdot n_w)^2 + n_t^2}$，相对于${O((n_t \cdot n_h \cdot n_w)^2)}$。
+
+#### Model 3:Factorised self-attention
+* 这个模型与Model 1包含相同数量的transformer层。然而，我们不是在第 l 层计算所有tokens对$z^l$的多头自注意力，而是将操作分解为首先仅在空间上计算自注意力（在从同一时间索引中提取的所有令牌中），然后在时间上（在从相同的空间索引中提取的所有标记）。
+* 因此，transformer 中的每个 self-attention 块都对时空交互进行了建模，但通过对两组较小元素的操作进行因式分解，比模型 1 更有效，从而实现与模型 2 相同的计算复杂度。我们注意到，在输入维度上分解注意力也在其他轮中进行了探索。
+* 这个操作可以通过将tokens z 从$R^{1 \times n_t \cdot n_h \cdot n_w \cdot d}$ reshape 到 $n_t \times n_h \cdot n_w \cdot d$（表示为$z_s$）再计算空间自注意力来高效实现。类似的，时间自注意力的输入$ z_t $被重塑为$ R^{n_h \cdot n_w \times n_t \times d}$。 在这里，我们假设主要维度是“批维度”。 我们的因式自注意力被定义为
+$${y_s^l = MSA(LN(z_s^l)) + z_s^l \tag{4}}$$
+$${y_t^l = MSA(LN(y_s^l)) + y_s^l \tag{5}}$$
+$${z_{l+1} = MLP(LN(y_t^l)) + y_t^l \tag{6}}$$
+* 我们观察到，如果模型参数按照第 2 节中的描述进行初始化，则空间-然后-时间-自我注意或时间-然后-空间-自注意的顺序没有区别。但是请注意，与模型 1 相比，参数的数量有所增加，因为有一个额外的自注意力层（参见公式 7）。 我们在这个模型中不使用分类标记，以避免在空间和时间维度之间重塑输入标记时产生歧义。
+
+#### Model 4:Factorised dot-product attention
+* 
 
 ## 5.Conclusion and Future work
 * 我们提出了四个用于视频分类的纯Transformer模型，具有不同的准确性和效率配置文件，在五个流行的数据集上实现了最先进的结果。 此外，我们已经展示了如何有效地规范这种高容量模型以在较小的数据集上进行训练，并彻底消除我们的主要设计选择。 未来的工作是消除我们对图像预训练模型的依赖，并将我们的模型扩展到更复杂的视频理解任务。
