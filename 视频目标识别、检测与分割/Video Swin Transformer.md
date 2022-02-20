@@ -5,11 +5,14 @@
 
 # 速读概览：
 ## 1.针对什么问题？ 
+  过去常使用在卷积模型上增加时间维度，即3D卷积的方式处理视频，这样的方式既不经济也不易于优化。ViT在图像上的巨大成功促使人们研究基于 Transformer 的架构以用于基于视频的识别任务。
     
-## 2.采用什么方法？  
+## 2.采用什么方法？
+  通过对 Swin Transformer 进行时空改编来实现，遵循原始Swin Transformer的层次化结构，将局部注意力计算的范围从仅空间域扩展到时空域。
     
 ## 3.达到什么效果？  
-    
+  在广泛的视频识别基线上实现了SOTA的精度，包括行为识别（84.9 top-1 accuracy on Kinetics-400 and 86.1 top-1 accuracy on Kinetics-600 with ∼20× less pre-training data and ∼3× smaller model size）和时间建模(69.6 top-1 accuracy on Something-Something v2)。
+
 ## 4.存在什么不足？
 
 
