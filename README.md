@@ -19,12 +19,12 @@
 
 ***
 
-论文共计33篇，其中包含
+论文共计34篇，其中包含
 
 | 主题 | 数量 |
 | ------ | :------: |
 | [视频目标识别、检测与分割](#video) | 7篇 |
-| [图像目标识别、检测与分割](#image) | 7篇 |
+| [图像目标识别、检测与分割](#image) | 8篇 |
 | [语义分割](#segmentation) | 7篇 |
 | [网络结构](#architecture) | 3篇 |
 | [强化学习](#reinforcement) | 1篇 |
@@ -53,16 +53,17 @@
 ***
 
 ### 图像目标识别、检测与分割<span id = "image"></span>
-
 | 论文 | 时间 | 会议 | 研究机构 | 作者 | 引用 | 原文 |
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | [Rich feature hierarchies for accurate object detection and semantic segmentation Tech report](https://github.com/massive11/Paper_reading/blob/master/%E5%9B%BE%E5%83%8F%E7%9B%AE%E6%A0%87%E8%AF%86%E5%88%AB%E3%80%81%E6%A3%80%E6%B5%8B%E4%B8%8E%E5%88%86%E5%89%B2/Rich%20feature%20hierarchies%20for%20accurate%20object%20detection%20and%20semantic%20segmentation%20Tech%20report.md) | 2014 | CVPR | UC Berkeley | R Girshick | 20369 | [Article](https://arxiv.org/abs/1311.2524) |  
 | [Spatial Pyramid Pooling in Deep Convolutional Networks for Visual Recognition](https://github.com/massive11/Paper_reading/blob/master/%E5%9B%BE%E5%83%8F%E7%9B%AE%E6%A0%87%E8%AF%86%E5%88%AB%E3%80%81%E6%A3%80%E6%B5%8B%E4%B8%8E%E5%88%86%E5%89%B2/Spatial%20Pyramid%20Pooling%20in%20Deep%20Convolutional%20Networks%20for%20Visual%20Recognition.md) | 2015 | SCI | Microsoft | Kaiming He | 7221 | [Article](https://arxiv.org/pdf/1406.4729.pdf) |
 | [Fast R-CNN](https://github.com/massive11/Paper_reading/blob/master/%E5%9B%BE%E5%83%8F%E7%9B%AE%E6%A0%87%E8%AF%86%E5%88%AB%E3%80%81%E6%A3%80%E6%B5%8B%E4%B8%8E%E5%88%86%E5%89%B2/Fast%20R-CNN.md) | 2015 | ICCV | Microsoft | R Girshick  | 16908 | [Article](https://arxiv.org/pdf/1504.08083.pdf) | 
 | [Faster R-CNN](https://github.com/massive11/Paper_reading/blob/master/%E5%9B%BE%E5%83%8F%E7%9B%AE%E6%A0%87%E8%AF%86%E5%88%AB%E3%80%81%E6%A3%80%E6%B5%8B%E4%B8%8E%E5%88%86%E5%89%B2/Faster%20R-CNN.md) | 2015 | NIPS | Microsoft | Shaoqing Ren | 25019 | [Article](https://arxiv.org/pdf/1506.01497.pdf) |  
+| [End-to-End Object Detection with Transformers](-) | 2020 | ICCV | Facebook AI | Nicolas Carion | 1570 | [Article](https://arxiv.org/abs/2005.12872) |  
 | [An Image is Worth 16X16 Words: Transformer for Image Recognition at Scale](https://github.com/massive11/Paper_reading/blob/master/%E5%9B%BE%E5%83%8F%E7%9B%AE%E6%A0%87%E8%AF%86%E5%88%AB%E3%80%81%E6%A3%80%E6%B5%8B%E4%B8%8E%E5%88%86%E5%89%B2/AN%20IMAGE%20IS%20WORTH%2016X16%20WORDS:%20TRANSFORMERS%20FOR%20IMAGE%20RECOGNITION%20AT%20SCALE.md) | 2021 | ICLR | Google Research | Alexey Dosovitskiy | 2116 | [Article](https://arxiv.org/abs/2010.11929) |
 | [Swin Transformer: Hierarchical Vision Transformer using Shifted Windows](https://github.com/massive11/Paper_reading/blob/master/%E5%9B%BE%E5%83%8F%E7%9B%AE%E6%A0%87%E8%AF%86%E5%88%AB%E3%80%81%E6%A3%80%E6%B5%8B%E4%B8%8E%E5%88%86%E5%89%B2/Masked%20Autoencoders%20Are%20Scalable%20Vision%20Learners.md) | 2021 | ICCV | MSRA | Ze Liu | 618 | [Article](https://arxiv.org/abs/2103.14030) |
 | [Masked Autoencoders Are Scalable Vision Learners](https://github.com/massive11/Paper_reading/blob/master/%E5%9B%BE%E5%83%8F%E7%9B%AE%E6%A0%87%E8%AF%86%E5%88%AB%E3%80%81%E6%A3%80%E6%B5%8B%E4%B8%8E%E5%88%86%E5%89%B2/Masked%20Autoencoders%20Are%20Scalable%20Vision%20Learners.md) | 2021 | - |FAIR | Kaiming He | 17 | [Article](https://arxiv.org/abs/2111.06377) |
+
 
 ***
 
@@ -251,10 +252,11 @@
 ***
 
 ## 2022年2月<span id = "2202"></span>
-本月共3篇
+本月共4篇
 
 | 日期 | 主题 | 论文 | 来源 | 原文 |
 | :----: | ----- | ---- | :----: | :----: |
 | 2.14 | 视频目标识别、检测与分割 | ViViT | ICCV 2021 | [Article](https://arxiv.org/abs/2103.15691)
 | 2.17 | 视频目标识别、检测与分割 | Video Swin Transformer | arxiv 2021 | [Article](https://arxiv.org/abs/2106.13230)
 | 2.20 | 视频目标识别、检测与分割 | Video Transformer Network | IEEE/CVF | [Article](https://arxiv.org/abs/2102.00719)
+| 2.21 | 图像目标识别、检测与分割 | End-to-End Object Detection with Transformers | ICCV | [Article](https://arxiv.org/abs/2005.12872)
