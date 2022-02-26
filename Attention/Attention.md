@@ -1,5 +1,6 @@
 >主题：Attention    
-本文标签：Attention
+时间：2022年2月24日  
+本文标签：Attention  
 
 
 ## Attention（2014-Google Mind-Recurrent Models of Visual Attention）
@@ -38,4 +39,13 @@
 
 
 ## Multi-Head Attention
+* 模拟卷积网络的多输出通道
+* 将模型分为多个头，形成多个子空间，可以让模型去关注不同方面的信息
+* 三个输入，key、query和value（同样一个东西即作为key，也是query和value）
+* 投影到Linear层的W是可以学习的。投影h次，希望可以学习到不同的东西，可以匹配不同的模式
 * Multi-Head Attention同时计算多个Attention，并最终得到合并结果，通过计算多次来捕获不同子空间上的相关信息。
+
+
+## Positional embedding
+* Attention本身没有时序信息。因此给一句话，完全打乱和不打乱得到的东西理论上是相同的，这不符合我们的需求。所以添加Positional embedding记录顺序信息
+* RNN处理时序信息是通过将上一时刻的信息送到下一时刻
