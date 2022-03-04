@@ -64,7 +64,9 @@ $${\Omega(W-MSA) = 4h\omega C^2 + 2M^2h\omega C \tag{2}}$$
 * 其中，前者是块编号 hw 的二次方，后者在 M 固定时是线性的（默认设置为 7）。 全局自注意力计算通常对于大型硬件来说是负担不起的，而基于窗口的自注意力是可扩展的。
 
 #### Shifted window partitioning in successive blocks
+ ![avatar](./img/swin-f2.png)
 * 基于窗口的自注意力模块缺乏跨窗口的连接，这限制了它的建模能力。 为了在保持非重叠窗口的有效计算的同时引入跨窗口连接，我们提出了一种Shifted window分区方法，该方法在连续 Swin Transformer 块中的两个分区配置之间交替。
+ ![avatar](./img/swin-f4.png)
 * 第一个模块使用从左上角像素开始的常规窗口划分策略，将 8×8 的特征图均匀划分为大小为 4×4(M =4) 的 2×2 窗口。 下一个模块采用与前一层不同的窗口配置，通过将窗口从规则分区的窗口中替换 (⌊ M/2 ⌋, ⌊ M/2 ⌋) 个像素。
 * 使用Shifted window分区方法，连续的 Swin Transformer 块计算为
 $${\hat z^l = W-MSA(LN(z^{l-1})) + z^{l-1},}$$
