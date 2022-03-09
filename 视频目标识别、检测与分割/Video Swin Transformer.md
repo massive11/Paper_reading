@@ -14,6 +14,7 @@
   在广泛的视频识别基线上实现了SOTA的精度，包括行为识别（84.9 top-1 accuracy on Kinetics-400 and 86.1 top-1 accuracy on Kinetics-600 with ∼20× less pre-training data and ∼3× smaller model size）和时间建模(69.6 top-1 accuracy on Something-Something v2)。
 
 ## 4.存在什么不足？
+  Video Swin Transformer对于长序列的依赖关系是通过固定size的token获得的。序列长度越长计算量越大。不能自适应的针对场景的变化作出改变。（Video Swin Transformer面向的场景是完整的视频输入，不是针对实时处理）
 
 
 

@@ -8,7 +8,7 @@
 ## 1.针对什么问题？ 
     本文希望可以扩展Transformer的能力以使其可以作为CV领域通用的backbone。现有的基于Transformer的方法中，tokens都是固定的尺度，不适合视觉应用的属性。且图像中像素的分辨率要比文本中文章的词高多了。许多视觉任务需要在像素级别密集预测，这对于高分辨率图像上的 Transformer 来说是难以处理的，因为其自注意力的计算复杂性与图像大小成二次方。（ViT）
 ## 2.采用什么方法？  
-    本文提出了一个通用的Transformer架构，称为Swin Transformer，它构建层级式特征图且计算复杂度与小的patches成线性关系。其关键设计元素是他在连续的自注意力层之间的shifted window部分。Shifted windows方案通过将 self-attention 计算限制在不重叠的local windows上，同时还允许跨窗口连接，从而带来更高的效率。
+    本文提出了一个通用的Transformer架构，称为Swin Transformer，它构建层级式特征图且计算复杂度与小的patches成线性关系。Swin Transformer结合了CNN和Tranformer的优势。Swin Tranformer同样是采用类似ViT的方式，将输入的图片分块。只在每个块的内部计算自注意力（Transformer），减少了计算量（图像的局部相关性原理）。为了引入跨窗口的连接，提出了Shifted Window的图片分块方式，与传统的分块方式重复交换使用。此外，每个stage进行一次patch merging，借此改变window的size，实现了层级式的结构（CNN效果好很大程度也是因为层级式结构），引入了更多的信息。
 ## 3.达到什么效果？  
     Swin Transformer的性能在 COCO 上超过了 +2.7 box AP 和 +2.6 mask AP，在 ADE20K 上超过了 +3.2 mIoU，大大超过了之前的 state-of-the-art，展示了基于 Transformer 的模型作为视觉骨干的潜力。
 ## 4.存在什么不足？
@@ -49,7 +49,9 @@
  ![avatar](./img/swin-f3.png)
 * 它首先通过像 ViT 这样的图像块分割模块将输入的 RGB 图像分割成不重叠的块。每个块都被视为一个“token”，其特征被设置为原始像素 RGB 值的串联。 在我们的实现中，我们使用 4 × 4 的块大小，因此每个块的特征维度为 4×4×3 = 48。在这个原始值特征上应用线性嵌入层，以将其投影到任意维度（表示为 C）。
 * 在这些图像块tokens上应用了几个具有改进的自注意力计算的 Transformer 块（Swin Transformer 块）。 Transformer 块保持tokens的数量（${\frac{H}{4} \times \frac{W}{4}}$），与线性嵌入一起被称为“Stage 1”。
-* 为了引入层级表示，随着网络变得更深，通过块合并层减少tokens的数量。第一个块合并层将每组 2×2 个相邻块的特征连接起来，并在 4C 维的连接特征上应用一个线性层。这将tokens数量减少了 2 × 2 = 4 的倍数（2× 分辨率下采样），并且输出维度设置为 2C。 之后应用 Swin Transformer 块进行特征转换，分辨率保持在 H8 × W8 。 第一个块合并和特征转换被称为“Stage 2”。该过程重复两次，分别为“Stage 3”和“Stage 4”，分别为H/16 × W/16 和 H/32 × W/32 的输出分辨率。 这些阶段共同产生分层表示，具有与典型卷积网络（例如 VGG 和 ResNet）相同的特征图分辨率。 因此，所提出的架构可以方便地替换现有方法中的骨干网络，用于各种视觉任务。
+* 为了引入层级表示，随着网络变得更深，通过块合并层减少tokens的数量（参考图一所示）。第一个块合并层将每组 2×2 个相邻块的特征连接起来，并在 4C 维的连接特征上应用一个线性层。这将tokens数量减少了 2 × 2 = 4 的倍数（2× 分辨率下采样），并且输出维度设置为 2C。（Patch Merging部分如下图所示。）
+![avatar](img/swin-ff1.png)
+*  之后应用 Swin Transformer 块进行特征转换，分辨率保持在 H8 × W8 。 第一个块合并和特征转换被称为“Stage 2”。该过程重复两次，分别为“Stage 3”和“Stage 4”，分别为H/16 × W/16 和 H/32 × W/32 的输出分辨率。 这些阶段共同产生分层表示，具有与典型卷积网络（例如 VGG 和 ResNet）相同的特征图分辨率。 因此，所提出的架构可以方便地替换现有方法中的骨干网络，用于各种视觉任务。
 
 #### Swin Transformer block
 * Swin Transformer 是通过将 Transformer 块中的标准多头自注意力 (MSA) 模块替换为基于shifted window的模块而构建的，其他层保持不变。 Swin Transformer 模块由一个基于移动窗口的 MSA 模块组成，然后是一个 2 层 MLP，其间具有 GELU 非线性。 在每个 MSA 模块和每个 MLP 之前应用一个 LayerNorm (LN) 层，在每个模块之后应用一个残差连接。
@@ -75,9 +77,15 @@ $${\hat z^{l+1} = SW-MSA(LN(z^l)) + z^l, }$$
 $${z^{l+1} = MLP(LN(\hat z^{l+1})) + \hat z^{l+1} \tag{3}}$$
 * 其中$\hat z^l$和$z^l$分别表示块 l 的 (S)W-MSA 模块和 MLP 模块的输出特征；
 W-MSA 和 SW-MSA 分别表示使用常规和Shifted window分区配置的基于窗口的多头自注意。
+* Swin Transformer通过重复交换不同的window划分方式，在不同的位置分别进行了窗口内部的注意力计算，即其所言的跨窗口连接。同时，在每个阶段进行一次patch merge，产生了层级式结构。这种层级式结构使得每个stage计算的window大小都不一样，包含了各层次信息的同时保证了较低的计算量，因此效果非常好。
 
-#### Efficient batch computation for shifted configurati
+#### Efficient batch computation for shifted configuration
 * Shifted window分区的一个问题是它会在移位配置中产生更多窗口，从⌈ h/M ⌉×⌈ w/M ⌉到(⌈ h/M ⌉+1)× (⌈ w/M ⌉+1)，并且一些窗口将小于 M × M。一个简单的解决方案是将较小的窗口填充到 M × M 的大小，并在计算注意力时屏蔽掉填充的值。当常规分区中的窗口数量较少时，例如2 × 2，使用这种简单的解决方案增加的计算量是相当大的（2 × 2 → 3 × 3，是 2.25 倍）。在这里，我们提出了一种更有效的批处理计算方法，通过向左上方向循环移位。在这种移位之后，批处理窗口可能由几个不相邻的子窗口组成在特征图中，因此采用掩码机制将自注意力计算限制在每个子窗口内。使用循环移位，批处理窗口的数量与常规窗口分区的数量相同，因此也是有效的。
+* 如下图所示（采用torch.roll实现。通过对特征图移位，并给Attention设置mask来间接实现的。能在保持原有的window个数下，最后的计算结果等价。）
+![avatar](img/swin-ff3.png)
+* mask计算如下
+![avatar](img/swin-ff4.png)
+![avatar](img/swin-ff2.png)
 
 #### Relative position bias
 * 在计算自注意力时，我们在计算相似度时为每个头部包含一个相对位置偏差${B ∈ R^{M^2 × M^2}}$：
@@ -93,6 +101,17 @@ $${Attention(Q, K, V) = SoftMax(QK^T/\sqrt{d} + B)V \tag{4}}$$
   * Swin-B: C = 128, layer numbers ={2, 2, 18, 2}
   * Swin-L: C = 192, layer numbers ={2, 2, 18, 2}
 * 其中C是第一阶段隐藏层的通道数。
+
+### 官方代码实现的整体思路
+* 整体流程如下
+  * 对特征图进行LayerNorm
+  * 通过self.shift_size决定是否需要对特征图进行shift
+  * 将特征图切成一个个窗口
+  * 计算Attention，通过self.attn_mask来区分Window Attention还是Shift Window Attention
+  * 将各个窗口合并回来
+  * 如果之前有做shift操作，此时进行reverse shift，把之前的shift操作恢复
+  * 做dropout和残差连接
+  * 通过一层LayerNorm+全连接层，以及dropout和残差连接
 
 ## 4.Experiments
 

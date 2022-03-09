@@ -75,3 +75,6 @@
 * A natural solution to video classification is to combine the success of CNNs for images and RNNs for sequences . 
 * In contrast, feedforward models are achieved by 3D convolutions (C3D)  in spacetime, and the 3D filters can be formed by “inflating” pre-trained 2D filters. 
 * In addition to end-to-end modeling on raw video inputs, it has been found that optical flow and trajectories can be helpful. Both flow and trajectories are off-the-shelf modules that may find long-range, non-local dependency. A systematic comparison of video architectures can be found in [7].
+
+## 3.Non-local Neural Networks
+### 3.1 Formulation
