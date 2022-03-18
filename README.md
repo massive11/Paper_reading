@@ -44,13 +44,13 @@
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | [Deep Feature Flow for Video Recognition](https://github.com/massive11/Paper_reading/blob/master/%E8%A7%86%E9%A2%91%E7%9B%AE%E6%A0%87%E8%AF%86%E5%88%AB%E3%80%81%E6%A3%80%E6%B5%8B%E4%B8%8E%E5%88%86%E5%89%B2/Deep%20Feature%20Flow%20for%20Video%20Recognition.md) | 2017 | CVPR | USTC MSRA | Xizhou Zhu | 396 | [Article](https://arxiv.org/pdf/1611.07715) |
 | [Flow-Guided Feature Aggregation for Video Object Detection](https://github.com/massive11/Paper_reading/blob/master/%E8%A7%86%E9%A2%91%E7%9B%AE%E6%A0%87%E8%AF%86%E5%88%AB%E3%80%81%E6%A3%80%E6%B5%8B%E4%B8%8E%E5%88%86%E5%89%B2/Flow-Guided%20Feature%20Aggression%20for%20Video%20Object%20Detection.md) | 2017 | ICCV | USTC MSRA | Xizhou Zhu | 385 | [Article](https://arxiv.org/abs/1703.10025) |
-| [P3D ResNet](-) | 2017 | ICCV | USTC MSRA | Zhaofan Qiu | 1109 | [Article](https://arxiv.org/abs/1711.10305) |
-| [NLNnet](-) | 2018 | CVPR | CMU FAIR | Xiaolong Wang | 4633 | [Article](https://arxiv.org/abs/1711.07971) |
+| [P3D ResNet](https://github.com/massive11/Paper_reading/blob/master/%E8%A7%86%E9%A2%91%E7%9B%AE%E6%A0%87%E8%AF%86%E5%88%AB%E3%80%81%E6%A3%80%E6%B5%8B%E4%B8%8E%E5%88%86%E5%89%B2/Learning%20Spatio-Temporal%20Representation%20with%20Pseudo-3D%20Residual%20Networks.md) | 2017 | ICCV | USTC MSRA | Zhaofan Qiu | 1109 | [Article](https://arxiv.org/abs/1711.10305) |
+| [NLNnet](https://github.com/massive11/Paper_reading/blob/master/%E8%A7%86%E9%A2%91%E7%9B%AE%E6%A0%87%E8%AF%86%E5%88%AB%E3%80%81%E6%A3%80%E6%B5%8B%E4%B8%8E%E5%88%86%E5%89%B2/Non-local%20Neural%20Networks.md) | 2018 | CVPR | CMU FAIR | Xiaolong Wang | 4633 | [Article](https://arxiv.org/abs/1711.07971) |
 | [Towards High Performance Video Object Detection](https://github.com/massive11/Paper_reading/blob/master/%E8%A7%86%E9%A2%91%E7%9B%AE%E6%A0%87%E8%AF%86%E5%88%AB%E3%80%81%E6%A3%80%E6%B5%8B%E4%B8%8E%E5%88%86%E5%89%B2/Towards%20High%20Performance%20Video%20Object%20Detection.md) | 2018 | CVPR | MSRA | Xizhou Zhu | 157 | [Article](https://arxiv.org/abs/1711.11577) |
 | [ViViT: A Video Vision Transformer](https://github.com/massive11/Paper_reading/blob/master/%E8%A7%86%E9%A2%91%E7%9B%AE%E6%A0%87%E8%AF%86%E5%88%AB%E3%80%81%E6%A3%80%E6%B5%8B%E4%B8%8E%E5%88%86%E5%89%B2/ViViT:%20A%20Video%20Vision%20Transformer.md) | 2021 | ICCV | Google Research | Anurag Arnab | 135 | [Article](https://arxiv.org/abs/2103.15691) |
 | [Video Swin Transformer](https://github.com/massive11/Paper_reading/blob/master/%E8%A7%86%E9%A2%91%E7%9B%AE%E6%A0%87%E8%AF%86%E5%88%AB%E3%80%81%E6%A3%80%E6%B5%8B%E4%B8%8E%E5%88%86%E5%89%B2/Video%20Swin%20Transformer.md) | 2021 | arxiv | MSRA | Ze Liu | 84 | [Article](https://arxiv.org/abs/2106.13230) |
 | [Video Transformer Network]((https://github.com/massive11/Paper_reading/blob/master/%E8%A7%86%E9%A2%91%E7%9B%AE%E6%A0%87%E8%AF%86%E5%88%AB%E3%80%81%E6%A3%80%E6%B5%8B%E4%B8%8E%E5%88%86%E5%89%B2/Video%20Transformer%20Network.md)) | 2021 | IEEE/CVF | Theator | Daniel Neimark | 79 | [Article](https://arxiv.org/abs/2102.00719) |
-| [SSTVOS: Sparse Spatiotemporal Transformers for Video Object Segmentation]((-)) | 2021 | CVPR | University of Toronto | Brendan Duke | 20 | [Article](https://arxiv.org/abs/2101.08833) |
+| [SSTVOS: Sparse Spatiotemporal Transformers for Video Object Segmentation](((https://github.com/massive11/Paper_reading/blob/master/%E8%A7%86%E9%A2%91%E7%9B%AE%E6%A0%87%E8%AF%86%E5%88%AB%E3%80%81%E6%A3%80%E6%B5%8B%E4%B8%8E%E5%88%86%E5%89%B2/SSTVOS:%20Sparse%20Spatiotemporal%20Transformers%20for%20Video%20Object%20Segmentation.md))) | 2021 | CVPR | University of Toronto | Brendan Duke | 20 | [Article](https://arxiv.org/abs/2101.08833) |
 | [Reliable Propagation-Correction Modulation for Video Object Segmentation](https://github.com/massive11/Paper_reading/blob/master/%E8%A7%86%E9%A2%91%E7%9B%AE%E6%A0%87%E8%AF%86%E5%88%AB%E3%80%81%E6%A3%80%E6%B5%8B%E4%B8%8E%E5%88%86%E5%89%B2/Reliable%20Propagation-Correction%20Modulation%20for%20Video%20Object%20Segmentation.md) | 2022 | AAAI | MSRA | Xiaohao Xu | - | [Article](https://arxiv.org/abs/2112.02853) |
 
 ***
@@ -89,7 +89,8 @@
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | 模型车自动驾驶平台及车道线识别算法设计与实现 | 2021 |  硕士学位论文 |  Zhejiang University | 谢荀 | - | CNKI |
 | [Road-map: A Light-Weight Semantic Map for Visual Localization towards Autonomous Driving](https://github.com/massive11/Paper_reading/blob/master/%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/Road-map:A%20light-weight%20semantic%20map%20for%20visual%20localization.md) | 2021 | ICRA | HUAWEI | Tong Qin | 3 | [Article](https://arxiv.org/abs/2106.02527) | 
-| [HDMapNet: A Local Semantic Map Learning and Evaluation Framework](-) | 2022 | ICRA | Tsinghua University | Qi Li | 1 | [Article](https://arxiv.org/abs/2107.06307) |
+| [HDMapNet: A Local Semantic Map Learning and Evaluation Framework](https://github.com/massive11/Paper_reading/blob/master/%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6/HDMapNet:%20A%20Local%20Semantic%20Map%20Learning%20and%20Evaluation%20Framework.md) | 2022 | ICRA | Tsinghua University | Qi Li | 1 | [Article](https://arxiv.org/abs/2107.06307) |
+| [Projecting Your View Attentively: Monocular Road Scene Layout Estimation via Cross-view Transformation](-) | 2021 | CVPR | Fuzhou University | Weixiang Yang | 3 | [Article](https://openaccess.thecvf.com/content/CVPR2021/papers/Yang_Projecting_Your_View_Attentively_Monocular_Road_Scene_Layout_Estimation_via_CVPR_2021_paper.pdf) |
 
 ***
 
@@ -278,3 +279,4 @@
 | 3.4 | 视频目标识别、检测与分割 | NLNnet | CVPR 2018 | [Article](https://arxiv.org/abs/1711.07971)
 | 3.11 | 视频目标识别、检测与分割 | SSTVOS | CVPR 2021 | [Article](https://arxiv.org/abs/2101.08833)
 | 3.17 | 自动驾驶 | HDMapNet | ICRA 2022 | [Article](https://arxiv.org/abs/2107.06307)
+| 3.18 | 自动驾驶 | Projecting Your View Attentively | CVPR 2021 | [Article](https://openaccess.thecvf.com/content/CVPR2021/papers/Yang_Projecting_Your_View_Attentively_Monocular_Road_Scene_Layout_Estimation_via_CVPR_2021_paper.pdf)
