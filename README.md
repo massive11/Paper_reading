@@ -19,19 +19,19 @@
 
 ***
 
-论文共计37篇，其中包含
+论文共计38篇，其中包含
 
 | 主题 | 数量 |
 | ------ | :------: |
 | [视频目标识别、检测与分割](#video) | 10篇 |
 | [图像目标识别、检测与分割](#image) | 8篇 |
-| [语义分割](#segmentation) | 7篇 |
+| [语义分割](#segmentation) | 6篇 |
+| [自动驾驶](#driving) | 3篇 |
 | [网络结构](#architecture) | 3篇 |
 | [强化学习](#reinforcement) | 1篇 |
 | [SLAM综述](#SLAM) | 2篇 |
 | [深度估计](#estimation) | 1篇 |
 | [视觉定位](#localization) | 1篇 |
-| [自动驾驶](#driving) | 1篇 |
 | [车道线检测](#lane) | 1篇 |
 | [语义定位](#semantic_localization) | 1篇 |
 | [非监督学习](#unsupervised) | 1篇 |
@@ -80,7 +80,16 @@
 | FarSee-Net: Real-Time Semantic Segmentation by Efficient Multi-scale Context Aggregation and Feature Space Super-resolution | 2020 | ICRA | SenseTime Group Limited | Zhanpeng Zhang | 9 | [Article](https://arxiv.org/abs/2003.03913) |
 | Boosting Real-Time Driving Scene Parsing with Shared Semantics | 2020 |ICRA | SJTU | Zhenzhen Xiang | 3 | [Article](https://arxiv.org/pdf/1909.07038.pdf) |
 | SA-LOAM: Semantic-aided LiDAR SLAM with Loop Closure | 2021 | ICRA | Zhejiang University | Lin Li | 1 | [Article](https://arxiv.org/abs/2106.11516) |
+
+***
+
+### 自动驾驶<span id = "driving"></span>
+
+| 论文 | 时间 | 会议 | 研究机构 | 作者 | 引用 | 原文 |
+| :----: | :----: | :----: | :----: | :----: | :----: | :----: |
+| 模型车自动驾驶平台及车道线识别算法设计与实现 | 2021 |  硕士学位论文 |  Zhejiang University | 谢荀 | - | CNKI |
 | [Road-map: A Light-Weight Semantic Map for Visual Localization towards Autonomous Driving](https://github.com/massive11/Paper_reading/blob/master/%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/Road-map:A%20light-weight%20semantic%20map%20for%20visual%20localization.md) | 2021 | ICRA | HUAWEI | Tong Qin | 3 | [Article](https://arxiv.org/abs/2106.02527) | 
+| [HDMapNet: A Local Semantic Map Learning and Evaluation Framework](-) | 2022 | ICRA | Tsinghua University | Qi Li | 1 | [Article](https://arxiv.org/abs/2107.06307) |
 
 ***
 
@@ -124,14 +133,6 @@
 | 论文 | 时间 | 会议 | 研究机构 | 作者 | 引用 | 原文 |
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | Differentiable Mapping Networks: Learning Structured Map Representations for Sparse Visual Localization | 2020 | ICRA | Google Research | Peter Karkus | 5 |  [Article](https://arxiv.org/abs/2005.09530)  |
-
-***
-
-### 自动驾驶<span id = "driving"></span>
-
-| 论文 | 时间 | 会议 | 研究机构 | 作者 | 引用 | 原文 |
-| :----: | :----: | :----: | :----: | :----: | :----: | :----: |
-| 模型车自动驾驶平台及车道线识别算法设计与实现 | 2021 |  硕士学位论文 |  Zhejiang University | 谢荀 | - | CNKI |
 
 ***
 
@@ -269,10 +270,11 @@
 ***
 
 ## 2022年3月<span id = "2203"></span>
-本月共3篇
+本月共4篇
 
 | 日期 | 主题 | 论文 | 来源 | 原文 |
 | :----: | ----- | ---- | :----: | :----: |
 | 3.4 | 视频目标识别、检测与分割 | P3D ResNet | ICCV 2017 | [Article](https://arxiv.org/abs/1711.10305)
 | 3.4 | 视频目标识别、检测与分割 | NLNnet | CVPR 2018 | [Article](https://arxiv.org/abs/1711.07971)
 | 3.11 | 视频目标识别、检测与分割 | SSTVOS | CVPR 2021 | [Article](https://arxiv.org/abs/2101.08833)
+| 3.17 | 自动驾驶 | HDMapNet | ICRA 2022 | [Article](https://arxiv.org/abs/2107.06307)
