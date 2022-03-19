@@ -1,7 +1,7 @@
 >论文标题：HDMapNet: A Local Semantic Map Learning and Evaluation Framework    
 发表时间：2022  
 研究组织：清华大学交叉信息院MARS Lab  
-本文主页：https://tsinghua-mars-lab.github.io/HDMapNet/  
+本文主页：https://tsinghua-mars-lab.github.io/HDMapNet/   
 本文标签：自动驾驶、语义地图、高精地图、跨视图学习、ICRA
 
 
