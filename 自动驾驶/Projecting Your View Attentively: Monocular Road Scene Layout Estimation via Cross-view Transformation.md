@@ -1,7 +1,7 @@
 >论文标题：Projecting Your View Attentively: Monocular Road Scene Layout Estimation via Cross-view Transformation  
 发表时间：2021  
 研究组织：福州大学、 南方科技大学、香港大学等  
-本文标签：自动驾驶、语义地图、高精地图、跨视图学习、CVPR
+本文标签：自动驾驶、语义地图、高精地图、cross-view、CVPR
 
 
 # 速读概览：

@@ -87,7 +87,8 @@
 
 | 论文 | 时间 | 会议 | 研究机构 | 作者 | 引用 | 原文 |
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
-| [MonoLayout: Amodal scene layout from a single image](-) | 2020 | IEEE/CVF | Robotics Research Center | Kaustubh Mani | 15 | [Article](https://arxiv.org/abs/2002.08394) |
+| [Learning to Look around Objects for Top-View Representations of Outdoor Scenes](-) | 2018 | ECCV | NEC-Labs | Samuel Schulter | 40 | [Article](https://arxiv.org/abs/1803.10870) |
+| [MonoLayout: Amodal scene layout from a single image](https://github.com/massive11/Paper_reading/blob/master/%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6/MonoLayout:%20Amodal%20scene%20layout%20from%20a%20single%20image.md) | 2020 | IEEE/CVF | Robotics Research Center | Kaustubh Mani | 15 | [Article](https://arxiv.org/abs/2002.08394) |
 | 模型车自动驾驶平台及车道线识别算法设计与实现 | 2021 |  硕士学位论文 |  Zhejiang University | 谢荀 | - | CNKI |
 | [Road-map: A Light-Weight Semantic Map for Visual Localization towards Autonomous Driving](https://github.com/massive11/Paper_reading/blob/master/%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/Road-map:A%20light-weight%20semantic%20map%20for%20visual%20localization.md) | 2021 | ICRA | HUAWEI | Tong Qin | 3 | [Article](https://arxiv.org/abs/2106.02527) |
 | [Projecting Your View Attentively: Monocular Road Scene Layout Estimation via Cross-view Transformation](https://github.com/massive11/Paper_reading/blob/master/%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6/Projecting%20Your%20View%20Attentively:%20Monocular%20Road%20Scene%20Layout%20Estimation%20via%20Cross-view%20Transformation.md) | 2021 | CVPR | Fuzhou University | Weixiang Yang | 3 | [Article](https://openaccess.thecvf.com/content/CVPR2021/papers/Yang_Projecting_Your_View_Attentively_Monocular_Road_Scene_Layout_Estimation_via_CVPR_2021_paper.pdf) |
@@ -272,7 +273,7 @@
 ***
 
 ## 2022年3月<span id = "2203"></span>
-本月共6篇
+本月共7篇
 
 | 日期 | 主题 | 论文 | 来源 | 原文 |
 | :----: | ----- | ---- | :----: | :----: |
@@ -281,5 +282,5 @@
 | 3.11 | 视频目标识别、检测与分割 | SSTVOS | CVPR 2021 | [Article](https://arxiv.org/abs/2101.08833)
 | 3.17 | 自动驾驶 | HDMapNet | ICRA 2022 | [Article](https://arxiv.org/abs/2107.06307)
 | 3.18 | 自动驾驶 | Projecting Your View Attentively | CVPR 2021 | [Article](https://openaccess.thecvf.com/content/CVPR2021/papers/Yang_Projecting_Your_View_Attentively_Monocular_Road_Scene_Layout_Estimation_via_CVPR_2021_paper.pdf)
-| 3.19 | 自动驾驶 | MonoLayout | IEEE/CVF 2020 | [Article](https://arxiv.org/abs/2002.08394)
-MonoLayout: Amodal scene layout from a single image
+| 3.20 | 自动驾驶 | MonoLayout | IEEE/CVF 2020 | [Article](https://arxiv.org/abs/2002.08394)
+| 3.22 | 自动驾驶 | Learning to Look around Objects for Top-View Representations of Outdoor Scenes | ECCV 2018 | [Article](https://arxiv.org/abs/1803.10870)
