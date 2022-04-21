@@ -1,5 +1,5 @@
 # Paper_reading
-本仓库用于记录个人学习笔记，主要是自动驾驶的视觉感知相关技术涉及到的书籍和论文，目前着重关注视频目标检测领域。尚处研究初期，论文笔记的整理比较混乱，努力逐步提升中。
+本仓库用于记录个人学习笔记，主要是自动驾驶的视觉感知相关技术涉及到的书籍和论文，目前着重关注Video Object Detection 和 cross-view 领域。
 
 # 目录
 * [书籍笔记](#book)
@@ -19,14 +19,14 @@
 
 ***
 
-论文共计40篇，其中包含
+论文共计42篇，其中包含
 
 | 主题 | 数量 |
 | ------ | :------: |
 | [视频目标识别、检测与分割](#video) | 10篇 |
 | [图像目标识别、检测与分割](#image) | 8篇 |
 | [语义分割](#segmentation) | 6篇 |
-| [自动驾驶](#driving) | 5篇 |
+| [自动驾驶](#driving) | 7篇 |
 | [网络结构](#architecture) | 3篇 |
 | [强化学习](#reinforcement) | 1篇 |
 | [SLAM综述](#SLAM) | 2篇 |
@@ -92,6 +92,7 @@
 | 模型车自动驾驶平台及车道线识别算法设计与实现 | 2021 |  硕士学位论文 |  Zhejiang University | 谢荀 | - | CNKI |
 | [Road-map: A Light-Weight Semantic Map for Visual Localization towards Autonomous Driving](https://github.com/massive11/Paper_reading/blob/master/%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/Road-map:A%20light-weight%20semantic%20map%20for%20visual%20localization.md) | 2021 | ICRA | HUAWEI | Tong Qin | 3 | [Article](https://arxiv.org/abs/2106.02527) |
 | [Projecting Your View Attentively: Monocular Road Scene Layout Estimation via Cross-view Transformation](https://github.com/massive11/Paper_reading/blob/master/%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6/Projecting%20Your%20View%20Attentively:%20Monocular%20Road%20Scene%20Layout%20Estimation%20via%20Cross-view%20Transformation.md) | 2021 | CVPR | Fuzhou University | Weixiang Yang | 3 | [Article](https://openaccess.thecvf.com/content/CVPR2021/papers/Yang_Projecting_Your_View_Attentively_Monocular_Road_Scene_Layout_Estimation_via_CVPR_2021_paper.pdf) |
+| [FIERY: Future Instance Prediction in Bird’s-Eye View from Surround Monocular Cameras](-) | 2021 | ICCV | Wayve | Anthony Hu | 9 | [Article](https://arxiv.org/abs/2104.10490) |
 | [HDMapNet: A Local Semantic Map Learning and Evaluation Framework](https://github.com/massive11/Paper_reading/blob/master/%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6/HDMapNet:%20A%20Local%20Semantic%20Map%20Learning%20and%20Evaluation%20Framework.md) | 2022 | ICRA | Tsinghua University | Qi Li | 1 | [Article](https://arxiv.org/abs/2107.06307) |
 
 ***
@@ -173,6 +174,7 @@
 * [2022年1月](#2201)
 * [2022年2月](#2202)
 * [2022年3月](#2203)
+* [2022年4月](#2204)
 
 ## 2021年7月<span id = "2107"></span>
 本月共3篇
@@ -284,3 +286,13 @@
 | 3.18 | 自动驾驶 | Projecting Your View Attentively | CVPR 2021 | [Article](https://openaccess.thecvf.com/content/CVPR2021/papers/Yang_Projecting_Your_View_Attentively_Monocular_Road_Scene_Layout_Estimation_via_CVPR_2021_paper.pdf)
 | 3.20 | 自动驾驶 | MonoLayout | IEEE/CVF 2020 | [Article](https://arxiv.org/abs/2002.08394)
 | 3.22 | 自动驾驶 | Learning to Look around Objects for Top-View Representations of Outdoor Scenes | ECCV 2018 | [Article](https://arxiv.org/abs/1803.10870)
+
+
+***
+
+## 2022年4月<span id = "2204"></span>
+本月共1篇
+
+| 日期 | 主题 | 论文 | 来源 | 原文 |
+| :----: | ----- | ---- | :----: | :----: |
+| 4.1 | 自动驾驶 | FIERY | ICCV 2021 | [Article](https://arxiv.org/abs/2104.10490)
