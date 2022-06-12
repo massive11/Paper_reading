@@ -1,5 +1,5 @@
 # Paper_reading
-本仓库用于记录个人学习笔记，主要是自动驾驶的视觉感知相关技术涉及到的书籍和论文，目前着重关注Video Object Detection 和 cross-view 领域。
+本仓库用于记录个人学习笔记，主要是自动驾驶的视觉感知相关技术涉及到的书籍和论文，目前着重关注BEV领域。
 
 # 目录
 * [书籍笔记](#book)
@@ -19,15 +19,16 @@
 
 ***
 
-论文共计42篇，其中包含
+论文共计46篇，其中包含
 
 | 主题 | 数量 |
 | ------ | :------: |
+| [BEV](#BEV) | 5篇 |
 | [视频目标识别、检测与分割](#video) | 10篇 |
 | [图像目标识别、检测与分割](#image) | 8篇 |
 | [语义分割](#segmentation) | 6篇 |
-| [自动驾驶](#driving) | 7篇 |
-| [网络结构](#architecture) | 3篇 |
+| [自动驾驶](#driving) | 5篇 |
+| [网络结构](#architecture) | 4篇 |
 | [强化学习](#reinforcement) | 1篇 |
 | [SLAM综述](#SLAM) | 2篇 |
 | [深度估计](#estimation) | 1篇 |
@@ -38,6 +39,17 @@
 
 ***
 
+### BEV<span id = "BEV"></span>
+| 论文 | 时间 | 会议 | 研究机构 | 作者 | 引用 | 原文 |
+| :----: | :----: | :----: | :----: | :----: | :----: | :----: |
+| [Learning to Look around Objects for Top-View Representations of Outdoor Scenes](-) | 2018 | ECCV | NEC-Labs | Samuel Schulter | 40 | [Article](https://arxiv.org/abs/1803.10870) |
+| [LSS](-) | 2020 | ECCV | NVIDIA | Anthony Hu | 60 | [Article](https://arxiv.org/abs/2008.05711) |
+| [FIERY: Future Instance Prediction in Bird’s-Eye View from Surround Monocular Cameras](-) | 2021 | ICCV | Wayve | Anthony Hu | 9 | [Article](https://arxiv.org/abs/2104.10490) |
+| [BEVDet](-) | 2022 | Arxiv | IEEE | Anthony Hu | 9 | [Article](https://arxiv.org/abs/2112.11790) |
+| [BEVDet4D](-) | 2022 | Arxiv | IEEE | Anthony Hu | 1 | [Article](https://arxiv.org/abs/2203.17054) |
+| [BEVFusion](-) | 2022 | Arxiv |  MIT | Zhijian Liu | 1 | [Article](https://arxiv.org/abs/2205.13542) |
+
+***
 
 ### 视频目标识别、检测与分割<span id = "video"></span>
 | 论文 | 时间 | 会议 | 研究机构 | 作者 | 引用 | 原文 |
@@ -87,12 +99,10 @@
 
 | 论文 | 时间 | 会议 | 研究机构 | 作者 | 引用 | 原文 |
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
-| [Learning to Look around Objects for Top-View Representations of Outdoor Scenes](-) | 2018 | ECCV | NEC-Labs | Samuel Schulter | 40 | [Article](https://arxiv.org/abs/1803.10870) |
 | [MonoLayout: Amodal scene layout from a single image](https://github.com/massive11/Paper_reading/blob/master/%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6/MonoLayout:%20Amodal%20scene%20layout%20from%20a%20single%20image.md) | 2020 | IEEE/CVF | Robotics Research Center | Kaustubh Mani | 15 | [Article](https://arxiv.org/abs/2002.08394) |
 | 模型车自动驾驶平台及车道线识别算法设计与实现 | 2021 |  硕士学位论文 |  Zhejiang University | 谢荀 | - | CNKI |
 | [Road-map: A Light-Weight Semantic Map for Visual Localization towards Autonomous Driving](https://github.com/massive11/Paper_reading/blob/master/%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/Road-map:A%20light-weight%20semantic%20map%20for%20visual%20localization.md) | 2021 | ICRA | HUAWEI | Tong Qin | 3 | [Article](https://arxiv.org/abs/2106.02527) |
 | [Projecting Your View Attentively: Monocular Road Scene Layout Estimation via Cross-view Transformation](https://github.com/massive11/Paper_reading/blob/master/%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6/Projecting%20Your%20View%20Attentively:%20Monocular%20Road%20Scene%20Layout%20Estimation%20via%20Cross-view%20Transformation.md) | 2021 | CVPR | Fuzhou University | Weixiang Yang | 3 | [Article](https://openaccess.thecvf.com/content/CVPR2021/papers/Yang_Projecting_Your_View_Attentively_Monocular_Road_Scene_Layout_Estimation_via_CVPR_2021_paper.pdf) |
-| [FIERY: Future Instance Prediction in Bird’s-Eye View from Surround Monocular Cameras](-) | 2021 | ICCV | Wayve | Anthony Hu | 9 | [Article](https://arxiv.org/abs/2104.10490) |
 | [HDMapNet: A Local Semantic Map Learning and Evaluation Framework](https://github.com/massive11/Paper_reading/blob/master/%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6/HDMapNet:%20A%20Local%20Semantic%20Map%20Learning%20and%20Evaluation%20Framework.md) | 2022 | ICRA | Tsinghua University | Qi Li | 1 | [Article](https://arxiv.org/abs/2107.06307) |
 
 ***
@@ -104,6 +114,7 @@
 | Deep residual learning for image recognition | 2015 | CVPR | Microsoft |Kaiming He | 97068 | [Article](https://arxiv.org/abs/1512.03385) |
 | Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift | 2015 | ICML | Google | S Ioffe | 31873 | [Article](https://arxiv.org/pdf/1502.03167.pdf) |
 | Attention is all you need | 2017 | NIPS | Google | Ashish Vaswani | 33638 | [Article](https://arxiv.org/abs/1706.03762) |
+| EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks | 2020 | CVPR | Google | Mingxing Tan | 6875 | [Article](https://arxiv.org/pdf/1905.11946) |
 
 ***
 
@@ -295,4 +306,17 @@
 
 | 日期 | 主题 | 论文 | 来源 | 原文 |
 | :----: | ----- | ---- | :----: | :----: |
-| 4.1 | 自动驾驶 | FIERY | ICCV 2021 | [Article](https://arxiv.org/abs/2104.10490)
+| 4.1 | BEV | FIERY | ICCV 2021 | [Article](https://arxiv.org/abs/2104.10490)
+
+***
+
+## 2022年6月<span id = "2206"></span>
+本月共4篇
+
+| 日期 | 主题 | 论文 | 来源 | 原文 |
+| :----: | ----- | ---- | :----: | :----: |
+| 6.7 | BEV | BEVDet | Arxiv 2022 | [Article](https://arxiv.org/abs/2112.11790)
+| 6.7 | BEV | BEVDet4D | Arxiv 2022 | [Article](https://arxiv.org/abs/2203.17054)
+| 6.9 | BEV |  LSS | ECCV 2020 | [Article](https://arxiv.org/abs/2008.05711)
+| 6.12 | 网络结构 |  EfficientNet | CVPR 2020 | [Article](https://arxiv.org/pdf/1905.11946)
+| 6.12 | BEV |  BEVFusion | Arxiv 2022 | [Article](https://arxiv.org/abs/2205.13542)
